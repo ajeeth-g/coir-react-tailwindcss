@@ -1,14 +1,16 @@
-import Footer from '../components/Footer'
-import Header from '../components/Header'
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 const Layout = ({ children }) => {
   return (
-     <div className="bg-cornsilk">
+    <div className="bg-cornsilk">
       <Header />
-      <main style={{ minHeight: '90vh', padding: '2rem' }}>{children}</main>
+      <main className="min-h-[90vh] px-2 py-6 md:px-8 md:py-10">
+        {children}
+      </main>
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

@@ -3,9 +3,9 @@ import { ArrowUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 // Static imports for React compatibility
-import hero1 from "../../../assets/hero_1.jpg";
-import hero2 from "../../../assets/hero_2.jpg";
-import hero3 from "../../../assets/hero_3.jpg";
+import hero1 from "../../../assets/Home_1.jpg";
+import hero2 from "../../../assets/Home_2.jpg";
+import hero3 from "../../../assets/Home_3.jpg";
 
 const images = [hero1, hero2, hero3];
 
@@ -20,7 +20,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="flex flex-col-reverse md:flex-row gap-2 items-start w-full h-auto md:h-96 px-4 py-6">
+    <section className="mt-20 flex flex-col-reverse items-center md:flex-row gap-2 w-full h-[80vh] px-4 py-6">
       {/* Left: Text Content */}
       <div className="w-full md:w-1/3">
         <h1 className="text-3xl md:text-5xl font-extrabold text-orange-800 leading-snug mb-6">
@@ -40,15 +40,14 @@ const HeroSection = () => {
       </div>
 
       {/* Right: Auto-scroll Carousel */}
-      <div className="w-full md:w-2/3 relative h-64 md:h-96 rounded-3xl overflow-hidden shadow-lg">
+      <div className="w-full md:w-2/3 relative h-64 md:h-full rounded-3xl overflow-hidden shadow-lg">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Slide ${index + 1}`}
-            className={`object-cover w-full h-64 md:h-96 transition-opacity duration-1000 absolute top-0 left-0 ${
-              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-            }`}
+            className={`object-cover w-full h-64 md:h-full transition-opacity duration-1000 absolute top-0 left-0 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
           />
         ))}
         {/* Pagination dots */}
@@ -57,9 +56,8 @@ const HeroSection = () => {
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`w-3 h-3 rounded-full transition-all duration-200 ${
-                idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
-              }`}
+              className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
+                }`}
             />
           ))}
         </div>

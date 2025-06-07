@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="px-6 py-4 flex justify-between items-center h-24">
+      <div className="px-6 py-4 flex justify-between items-center h-20 w-full fixed top-0 left-0 z-50  shadow">
         <h1 className="text-2xl md:text-3xl font-bold text-orange-600 tracking-wide">
           SSS Global Coir
         </h1>

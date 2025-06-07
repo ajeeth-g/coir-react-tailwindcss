@@ -72,7 +72,7 @@ const OurProductSection = () => {
   };
 
   return (
-    <section className="px-4 py-12 max-w-7xl mx-auto">
+    <section className="py-12 max-w-7xl mx-auto">
       {/* Header */}
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left mb-10">
         <h2 className="text-orange-600 font-bold text-4xl">
