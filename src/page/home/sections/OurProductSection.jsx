@@ -1,56 +1,12 @@
-import React, { useRef } from "react";
-import hero1 from "../../../assets/hero_1.jpg";
-import hero2 from "../../../assets/hero_2.jpg";
-import hero3 from "../../../assets/hero_3.jpg";
-import ProductCard from "../../../components/ProductCard";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const products = [
-  {
-    title: "Coco Grow Bags",
-    description:
-      "Biodegradable and eco-friendly, ideal for hydroponic cultivation.",
-    image: hero1,
-  },
-  {
-    title: "Coconut Fibre",
-    description: "Strong natural fiber used in brushes, mattresses, and ropes.",
-    image: hero2,
-  },
-  {
-    title: "Twisted Fibre",
-    description: "Processed fiber suitable for geotextiles and industrial applications.",
-    image: hero3,
-  },
-  {
-    title: "Coir Peat",
-    description:
-      "Excellent water retention, ideal for potting mixes and soil conditioning.",
-    image: hero1,
-  },
-  {
-    title: "Coir Mats",
-    description: "Durable natural mats perfect for doorsteps and landscaping.",
-    image: hero2,
-  },
-  {
-    title: "Coir Brushes",
-    description: "Eco-friendly brushes for various cleaning purposes.",
-    image: hero3,
-  },
-  {
-    title: "Coir Yarn",
-    description: "Strong yarn for ropes and mats manufacturing.",
-    image: hero1,
-  },
-  {
-    title: "Coir Fiber",
-    description: "Natural fiber with multiple industrial uses.",
-    image: hero2,
-  },
-];
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+import ProductCard from "../../../components/ProductCard";
+import products from "../../../data/products.json";
+import { images } from "../../../assets";
 
 const OurProductSection = () => {
+  const navigate = useNavigate();
   const scrollRef = useRef(null);
 
   const scrollLeft = () => {
@@ -90,13 +46,18 @@ const OurProductSection = () => {
           ref={scrollRef}
           className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory scrollbar-custom"
         >
-          {products.map(({ title, description, image }, index) => (
+          {products.map((p) => (
             <div
-              key={index}
+              key={p.id}
               className="flex-shrink-0 w-[calc(25%-1.5rem)] snap-start"
               style={{ minWidth: "280px" }}
             >
-              <ProductCard title={title} description={description} image={image} />
+              <ProductCard
+                title={p.title}
+                description={p.description}
+                image={images[p.image]}
+                onClick={() => navigate(`/products/${p.id}`)}
+              />
             </div>
           ))}
         </div>

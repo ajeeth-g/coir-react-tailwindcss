@@ -1,0 +1,143 @@
+[
+  {
+    "id": "Coconuts",
+    "title": "Coconuts",
+    "description": "As we are well aware of the nuances in this domain, we are pragmatic in proffering Raw Coconut to our esteemed clients.",
+    "image": "hero1.jpg",
+    "detailSections": [
+      {
+        "type": "textImage",
+        "layout": "leftText",
+        "title": "Coconuts",
+        "description": "coconut fibre, is a natural fibre extracted from the husk of coconut and used in products such as floor mats, doormats, brushes and mattresses. Coir is the fibrous material found between the hard, internal shell and the outer coat of a coconut. Other uses of brown coir (made from ripe coconut) are in upholstery padding, sacking and horticulture. White coir, harvested from unripe coconuts, is used for making finer brushes, string, rope and fishing nets. It has the advantage of not sinking, so can be used in long lengths on deep water without the added weight dragging down boats and buoys.",
+        "image": "hero1.jpg"
+      }
+    ]
+  },
+  {
+    "id": "Coconut Fibre",
+    "title": "Coconut Fibre",
+    "description": "coconut fiber has very long history, Ancient navigators widely use these coconut fiber based ropes for their ships over long period.",
+    "image": "hero2.jpg",
+    "detailSections": [
+      {
+        "type": "textImage",
+        "layout": "leftText",
+        "title": "Mattress Fibre",
+        "description": "Mattresses are usually placed on top of a bed base which may be solid, as in the case of a platform bed, or elastic, such as an upholstered wood and wire box spring or a slatted foundation. Mattresses may consist of a quilted or similarly fastened case, usually of heavy cloth, that contains materials such as hair, straw, cotton, foam rubber, or a framework of metal springs.Mattresses may also be filled with air or water.",
+        "image": "hero2.jpg"
+      },
+      {
+        "type": "textImage",
+        "layout": "leftImage",
+        "title": "Mixed Fibre",
+        "description": "Mattresses are usually placed on top of a bed base which may be solid, as in the case of a platform bed, or elastic, such as an upholstered wood and wire box spring or a slatted foundation. Mattresses may consist of a quilted or similarly fastened case, usually of heavy cloth, that contains materials such as hair, straw, cotton, foam rubber, or a framework of metal springs.Mattresses may also be filled with air or water.",
+        "image": "hero3.jpg"
+      },
+      {
+        "type": "specsUses",
+        "specs": [
+          { "label": "Color", "value": "Brown and Golden Yellow" },
+          { "label": "Moisture", "value": "15% - 20%" },
+          { "label": "Impurity", "value": "3% max" }
+        ],
+        "uses": [
+          "making carpets",
+          "making finer brushes",
+          "rope and fishing nets",
+          "making finer brushes"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "coir-fiber",
+    "title": "Coir Fiber",
+    "description": "Natural and durable fiber",
+    "image": "hero2.jpg",
+    "detailSections": [
+      {
+        "type": "textImage",
+        "layout": "leftText",
+        "title": "Coir Fiber",
+        "description": "Natural and durable fiber",
+        "image": "hero2.jpg"
+      },
+      {
+        "type": "textImage",
+        "layout": "leftImage",
+        "title": "Why choose coir fiber?",
+        "description": "Coir fiber is resistant to rot, makes excellent mats & brushes.",
+        "image": "hero3.jpg"
+      },
+      {
+        "type": "specsUses",
+        "specs": [
+          { "label": "Length", "value": "5–20 cm" },
+          { "label": "Tensile Strength", "value": "≥ 4.0 kgf" }
+        ],
+        "uses": ["Brush manufacturing", "Mattress stuffing", "Geotextiles"]
+      }
+    ]
+  },
+  {
+    "id": "coir-fiber",
+    "title": "Coir Fiber",
+    "description": "Natural and durable fiber",
+    "image": "hero2.jpg",
+    "detailSections": [
+      {
+        "type": "textImage",
+        "layout": "leftText",
+        "title": "Coir Fiber",
+        "description": "Natural and durable fiber",
+        "image": "hero2.jpg"
+      },
+      {
+        "type": "textImage",
+        "layout": "leftImage",
+        "title": "Why choose coir fiber?",
+        "description": "Coir fiber is resistant to rot, makes excellent mats & brushes.",
+        "image": "hero3.jpg"
+      },
+      {
+        "type": "specsUses",
+        "specs": [
+          { "label": "Length", "value": "5–20 cm" },
+          { "label": "Tensile Strength", "value": "≥ 4.0 kgf" }
+        ],
+        "uses": ["Brush manufacturing", "Mattress stuffing", "Geotextiles"]
+      }
+    ]
+  },
+  {
+    "id": "coir-fiber",
+    "title": "Coir Fiber",
+    "description": "Natural and durable fiber",
+    "image": "hero2.jpg",
+    "detailSections": [
+      {
+        "type": "textImage",
+        "layout": "leftText",
+        "title": "Coir Fiber",
+        "description": "Natural and durable fiber",
+        "image": "hero2.jpg"
+      },
+      {
+        "type": "textImage",
+        "layout": "leftImage",
+        "title": "Why choose coir fiber?",
+        "description": "Coir fiber is resistant to rot, makes excellent mats & brushes.",
+        "image": "hero3.jpg"
+      },
+      {
+        "type": "specsUses",
+        "specs": [
+          { "label": "Length", "value": "5–20 cm" },
+          { "label": "Tensile Strength", "value": "≥ 4.0 kgf" }
+        ],
+        "uses": ["Brush manufacturing", "Mattress stuffing", "Geotextiles"]
+      }
+    ]
+  }
+]
