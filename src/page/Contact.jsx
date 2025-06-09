@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
        {/* Left Section */}
 <div className="col-span-1 bg-gradient-to-br from-orange-600 to-slate-700 text-white p-8 rounded-3xl flex flex-col justify-center items-start space-y-6">
   <h2 className="text-2xl font-bold leading-snug">

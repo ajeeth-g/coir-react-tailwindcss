@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Leaf, Menu, X } from "lucide-react";
 import AnimatedLink from "./AnimatedLink";
 
@@ -7,7 +7,6 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
@@ -19,9 +18,11 @@ const Header = () => {
 
   return (
     <nav>
-      <div  className={`px-6 py-4 flex justify-between items-center h-20 w-full fixed top-0 left-0 z-50 shadow transition-colors duration-300 ${
+      <div
+        className={`px-6 py-4 flex justify-between items-center h-20 w-full fixed top-0 left-0 z-50 shadow transition-colors duration-300 ${
           scrolled ? "bg-cornsilk backdrop-blur-sm" : "bg-transparent"
-        }`}>
+        }`}
+      >
         <h1 className="text-2xl md:text-3xl font-bold text-orange-600 tracking-wide">
           SSS Global Coir
         </h1>
@@ -51,9 +52,19 @@ const Header = () => {
             <AnimatedLink to="/our-portfolio">Portfolio</AnimatedLink>
           </li>
           <li>
-            <p className="px-5 py-1.5 rounded-full border-2 border-orange-600 hover:bg-orange-100 transition">
-              <AnimatedLink to="/contact-us">Contact Us</AnimatedLink>
-            </p>
+            <NavLink
+              to="/contact-us"
+              className={({ isActive }) =>
+                `px-5 py-1.5 rounded-full border-2 border-orange-600 hover:bg-orange-700 hover:text-white transition
+       ${
+         isActive
+           ? "bg-orange-600 text-white"
+           : ""
+       }`
+              }
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -67,8 +78,8 @@ const Header = () => {
           <AnimatedLink to="/about-us" onClick={() => setMenuOpen(false)}>
             About Us
           </AnimatedLink>
-           <AnimatedLink to="/products" onClick={() => setMenuOpen(false)}>
-            Products  
+          <AnimatedLink to="/products" onClick={() => setMenuOpen(false)}>
+            Products
           </AnimatedLink>
           <AnimatedLink to="/our-infra" onClick={() => setMenuOpen(false)}>
             Our Infra

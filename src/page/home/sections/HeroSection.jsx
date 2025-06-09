@@ -29,7 +29,7 @@ const HeroSection = () => {
           Coir Products Manufacturing
         </h1>
         <Link
-          to="/contact-us"
+          to="/products"
           className="group inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-orange-600 rounded-full font-semibold transition-colors duration-200 hover:bg-orange-600 hover:text-white"
         >
           Explore Products
