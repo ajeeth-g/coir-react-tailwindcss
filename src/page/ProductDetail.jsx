@@ -25,6 +25,8 @@ const ProductDetail = () => {
       </section>
 
       {product.detailSections.map((sec, idx) => {
+        console.log(sec.image);
+        
         switch (sec.type) {
           case "textImage":
             return (
