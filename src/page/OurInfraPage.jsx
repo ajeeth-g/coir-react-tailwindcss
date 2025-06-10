@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import aboutHero from "../assets/Home_1.jpg";
 import image1 from "../assets/Infra_18.jpg";
 import image2 from "../assets/Infra_17.jpg";
 import image3 from "../assets/Infra_19.jpg";
@@ -24,6 +23,7 @@ import image17 from "../assets/Infra_10.jpg";
 
 import image18 from "../assets/Infra_15.jpg";
 import image19 from "../assets/Infra_16.jpg";
+import Breadcrumb from "../components/Breadcrumb";
 
 // Renamed for clarity
 const image_1 = [image1, image2, image3];
@@ -51,19 +51,15 @@ const OurInfraPage = () => {
     return () => clearInterval(interval2);
   }, []);
 
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Our Infra", href: null },
+  ];
+
   return (
     <div className="mt-20 space-y-20">
       {/* Hero Section */}
-      <section className="relative rounded-3xl overflow-hidden mx-auto w-full">
-        <img
-          src={aboutHero}
-          alt="About us banner"
-          className="w-full h-80 object-cover rounded-3xl shadow-md"
-        />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Our Infra</h1>
-        </div>
-      </section>
+      <Breadcrumb items={breadcrumbItems} title="Our Infra" />
 
       {/* Carousel & Text Section */}
       <section className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-4">
@@ -74,8 +70,9 @@ const OurInfraPage = () => {
               key={index}
               src={src}
               alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             />
           ))}
 
@@ -84,8 +81,9 @@ const OurInfraPage = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
-                  }`}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
+                }`}
               />
             ))}
           </div>
@@ -97,9 +95,10 @@ const OurInfraPage = () => {
             We Provide World-Class Infrastructure
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Our modern production units are designed to meet the highest standards
-            of quality and efficiency. We use eco-friendly technologies and provide
-            a safe and empowering workspace to rural communities.
+            Our modern production units are designed to meet the highest
+            standards of quality and efficiency. We use eco-friendly
+            technologies and provide a safe and empowering workspace to rural
+            communities.
           </p>
         </div>
       </section>
@@ -112,9 +111,10 @@ const OurInfraPage = () => {
             Empowering Local Communities
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            We are committed to sustainable development through rural employment,
-            skill-building, and community-led production. Our infrastructure is more
-            than machinery—it's a platform for growth and inclusion.
+            We are committed to sustainable development through rural
+            employment, skill-building, and community-led production. Our
+            infrastructure is more than machinery—it's a platform for growth and
+            inclusion.
           </p>
         </div>
 
@@ -125,8 +125,9 @@ const OurInfraPage = () => {
               key={index}
               src={src}
               alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex2 ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentIndex2 ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             />
           ))}
 
@@ -135,8 +136,9 @@ const OurInfraPage = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex2(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex2 ? "bg-orange-600 w-4 h-4" : "bg-white"
-                  }`}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  idx === currentIndex2 ? "bg-orange-600 w-4 h-4" : "bg-white"
+                }`}
               />
             ))}
           </div>
@@ -151,8 +153,9 @@ const OurInfraPage = () => {
               key={index}
               src={src}
               alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             />
           ))}
 
@@ -161,8 +164,9 @@ const OurInfraPage = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
-                  }`}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
+                }`}
               />
             ))}
           </div>
@@ -174,9 +178,10 @@ const OurInfraPage = () => {
             We Provide World-Class Infrastructure
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Our modern production units are designed to meet the highest standards
-            of quality and efficiency. We use eco-friendly technologies and provide
-            a safe and empowering workspace to rural communities.
+            Our modern production units are designed to meet the highest
+            standards of quality and efficiency. We use eco-friendly
+            technologies and provide a safe and empowering workspace to rural
+            communities.
           </p>
         </div>
       </section>
@@ -189,9 +194,10 @@ const OurInfraPage = () => {
             Empowering Local Communities
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            We are committed to sustainable development through rural employment,
-            skill-building, and community-led production. Our infrastructure is more
-            than machinery—it's a platform for growth and inclusion.
+            We are committed to sustainable development through rural
+            employment, skill-building, and community-led production. Our
+            infrastructure is more than machinery—it's a platform for growth and
+            inclusion.
           </p>
         </div>
 
@@ -202,8 +208,9 @@ const OurInfraPage = () => {
               key={index}
               src={src}
               alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex2 ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentIndex2 ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             />
           ))}
 
@@ -212,8 +219,9 @@ const OurInfraPage = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex2(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex2 ? "bg-orange-600 w-4 h-4" : "bg-white"
-                  }`}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  idx === currentIndex2 ? "bg-orange-600 w-4 h-4" : "bg-white"
+                }`}
               />
             ))}
           </div>
@@ -228,8 +236,9 @@ const OurInfraPage = () => {
               key={index}
               src={src}
               alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             />
           ))}
 
@@ -238,8 +247,9 @@ const OurInfraPage = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
-                  }`}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
+                }`}
               />
             ))}
           </div>
@@ -251,9 +261,10 @@ const OurInfraPage = () => {
             We Provide World-Class Infrastructure
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Our modern production units are designed to meet the highest standards
-            of quality and efficiency. We use eco-friendly technologies and provide
-            a safe and empowering workspace to rural communities.
+            Our modern production units are designed to meet the highest
+            standards of quality and efficiency. We use eco-friendly
+            technologies and provide a safe and empowering workspace to rural
+            communities.
           </p>
         </div>
       </section>
@@ -266,9 +277,10 @@ const OurInfraPage = () => {
             Empowering Local Communities
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            We are committed to sustainable development through rural employment,
-            skill-building, and community-led production. Our infrastructure is more
-            than machinery—it's a platform for growth and inclusion.
+            We are committed to sustainable development through rural
+            employment, skill-building, and community-led production. Our
+            infrastructure is more than machinery—it's a platform for growth and
+            inclusion.
           </p>
         </div>
 
@@ -279,8 +291,9 @@ const OurInfraPage = () => {
               key={index}
               src={src}
               alt={`Slide ${index + 1}`}
-              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentIndex2 ? "opacity-100 z-10" : "opacity-0 z-0"
-                }`}
+              className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentIndex2 ? "opacity-100 z-10" : "opacity-0 z-0"
+              }`}
             />
           ))}
 
@@ -289,8 +302,9 @@ const OurInfraPage = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex2(idx)}
-                className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex2 ? "bg-orange-600 w-4 h-4" : "bg-white"
-                  }`}
+                className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                  idx === currentIndex2 ? "bg-orange-600 w-4 h-4" : "bg-white"
+                }`}
               />
             ))}
           </div>

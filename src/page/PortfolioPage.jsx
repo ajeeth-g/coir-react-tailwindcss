@@ -1,58 +1,89 @@
 import { X } from "lucide-react";
 import { useState } from "react";
-import aboutHero from "../assets/Home_1.jpg";
-import portfolio_1 from "../assets/portfolio_1.jpg"
-import portfolio_2 from "../assets/portfolio_2.jpg"
-import portfolio_3 from "../assets/portfolio_3.jpg"
-import portfolio_4 from "../assets/portfolio_4.jpg"
-import portfolio_5 from "../assets/portfolio_5.jpg"
-import portfolio_6 from "../assets/portfolio_6.jpg"
-import portfolio_7 from "../assets/portfolio_7.jpg"
-import portfolio_8 from "../assets/portfolio_8.jpg"
-import portfolio_9 from "../assets/portfolio_9.jpg"
-import portfolio_10 from "../assets/portfolio_10.jpg"
-import portfolio_11 from "../assets/portfolio_11.jpg"
-import portfolio_12 from "../assets/portfolio_12.jpg"
-import portfolio_13 from "../assets/portfolio_13.jpg"
-import portfolio_14 from "../assets/portfolio_14.jpg"
-import portfolio_15 from "../assets/portfolio_15.jpg"
-import portfolio_16 from "../assets/portfolio_16.jpg"
-import portfolio_17 from "../assets/portfolio_17.jpg"
-import portfolio_18 from "../assets/portfolio_18.jpg"
-import portfolio_19 from "../assets/portfolio_19.jpg"
-import portfolio_21 from "../assets/portfolio_21.jpg"
-import portfolio_22 from "../assets/portfolio_22.jpg"
+import portfolio_1 from "../assets/portfolio_1.jpg";
+import portfolio_2 from "../assets/portfolio_2.jpg";
+import portfolio_3 from "../assets/portfolio_3.jpg";
+import portfolio_4 from "../assets/portfolio_4.jpg";
+import portfolio_5 from "../assets/portfolio_5.jpg";
+import portfolio_6 from "../assets/portfolio_6.jpg";
+import portfolio_7 from "../assets/portfolio_7.jpg";
+import portfolio_8 from "../assets/portfolio_8.jpg";
+import portfolio_9 from "../assets/portfolio_9.jpg";
+import portfolio_10 from "../assets/portfolio_10.jpg";
+import portfolio_11 from "../assets/portfolio_11.jpg";
+import portfolio_12 from "../assets/portfolio_12.jpg";
+import portfolio_13 from "../assets/portfolio_13.jpg";
+import portfolio_14 from "../assets/portfolio_14.jpg";
+import portfolio_15 from "../assets/portfolio_15.jpg";
+import portfolio_16 from "../assets/portfolio_16.jpg";
+import portfolio_17 from "../assets/portfolio_17.jpg";
+import portfolio_18 from "../assets/portfolio_18.jpg";
+import portfolio_19 from "../assets/portfolio_19.jpg";
+import portfolio_21 from "../assets/portfolio_21.jpg";
+import portfolio_22 from "../assets/portfolio_22.jpg";
+import Breadcrumb from "../components/Breadcrumb";
 
 const images = [
-    { id: 1, src: portfolio_1, alt: "Coconut Husk", category: "fiber" },
-    { id: 2, src: portfolio_2, alt: "Fiber", category: "fiber" },
-    { id: 3, src: portfolio_3, alt: "Twisted Fiber", category: "fiber" },
-    { id: 4, src: portfolio_5, alt: "Twisted Fiber", category: "fiber" },
-    { id: 5, src: portfolio_4, alt: "Mattress Fiber", category: "fiber" },
-    { id: 6, src: portfolio_6, alt: "Bristle Fiber", category: "fiber" },
+  { id: 1, src: portfolio_1, alt: "Coconut Husk", category: "fiber" },
+  { id: 2, src: portfolio_2, alt: "Fiber", category: "fiber" },
+  { id: 3, src: portfolio_3, alt: "Twisted Fiber", category: "fiber" },
+  { id: 4, src: portfolio_5, alt: "Twisted Fiber", category: "fiber" },
+  { id: 5, src: portfolio_4, alt: "Mattress Fiber", category: "fiber" },
+  { id: 6, src: portfolio_6, alt: "Bristle Fiber", category: "fiber" },
 
-    { id: 7, src: portfolio_7, alt: "Pith", category: "coir-peat" },
-    { id: 8, src: portfolio_19, alt: "Pith", category: "coir-peat" },
-    { id: 9, src: portfolio_8, alt: "Coir Pith 5Kg", category: "coir-peat" },
-    { id: 10, src: portfolio_9, alt: "Coir Pith 650Grm", category: "coir-peat" },
-    { id: 11, src: portfolio_10, alt: "Bulk Bag", category: "coir-peat" },
+  { id: 7, src: portfolio_7, alt: "Pith", category: "coir-peat" },
+  { id: 8, src: portfolio_19, alt: "Pith", category: "coir-peat" },
+  { id: 9, src: portfolio_8, alt: "Coir Pith 5Kg", category: "coir-peat" },
+  { id: 10, src: portfolio_9, alt: "Coir Pith 650Grm", category: "coir-peat" },
+  { id: 11, src: portfolio_10, alt: "Bulk Bag", category: "coir-peat" },
 
-    { id: 12, src: portfolio_17, alt: "Grow Bag", category: "grow-bag" },
-    { id: 13, src: portfolio_18, alt: "Grow Bag", category: "grow-bag" },
+  { id: 12, src: portfolio_17, alt: "Grow Bag", category: "grow-bag" },
+  { id: 13, src: portfolio_18, alt: "Grow Bag", category: "grow-bag" },
 
-    { id: 14, src: portfolio_14, alt: "Coins", category: "nursery" },
-    { id: 15, src: portfolio_15, alt: "Pellets", category: "nursery" },
-    { id: 16, src: portfolio_16, alt: "Cubes", category: "nursery" },
+  { id: 14, src: portfolio_14, alt: "Coins", category: "nursery" },
+  { id: 15, src: portfolio_15, alt: "Pellets", category: "nursery" },
+  { id: 16, src: portfolio_16, alt: "Cubes", category: "nursery" },
 
-    { id: 17, src: portfolio_11, alt: "Garden Articles", category: "garden-articles" },
-    { id: 18, src: portfolio_12, alt: "Garden Articles", category: "garden-articles" },
-    { id: 19, src: portfolio_13, alt: "Garden Articles", category: "garden-articles" },
-    { id: 20, src: portfolio_22, alt: "Garden Articles", category: "garden-articles" },
-    { id: 21, src: portfolio_21, alt: "Garden Articles", category: "garden-articles" },
+  {
+    id: 17,
+    src: portfolio_11,
+    alt: "Garden Articles",
+    category: "garden-articles",
+  },
+  {
+    id: 18,
+    src: portfolio_12,
+    alt: "Garden Articles",
+    category: "garden-articles",
+  },
+  {
+    id: 19,
+    src: portfolio_13,
+    alt: "Garden Articles",
+    category: "garden-articles",
+  },
+  {
+    id: 20,
+    src: portfolio_22,
+    alt: "Garden Articles",
+    category: "garden-articles",
+  },
+  {
+    id: 21,
+    src: portfolio_21,
+    alt: "Garden Articles",
+    category: "garden-articles",
+  },
 ];
 
-const categories = ["all", "fiber", "coir-peat", "grow-bag", "nursery", "garden-articles"];
-
+const categories = [
+  "all",
+  "fiber",
+  "coir-peat",
+  "grow-bag",
+  "nursery",
+  "garden-articles",
+];
 
 const PortfolioPage = () => {
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -78,39 +109,37 @@ const PortfolioPage = () => {
   const filteredImages =
     selectedCategory === "all"
       ? images
-      : images.filter((img) => img.category.toLowerCase() === selectedCategory.toLowerCase());
+      : images.filter(
+          (img) => img.category.toLowerCase() === selectedCategory.toLowerCase()
+        );
+
+  const breadcrumbItems = [
+    { label: "Home", href: "/" },
+    { label: "Portfolio", href: null },
+  ];
 
   return (
     <section className="mt-20 space-y-10">
-      <section className="relative rounded-3xl overflow-hidden mx-auto w-full">
-        <img
-          src={aboutHero}
-          alt="About us banner"
-          className="w-full h-80 object-cover rounded-3xl shadow-md"
-        />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Our Portfolio</h1>
-        </div>
-      </section>
+      <Breadcrumb items={breadcrumbItems} title="Our Portfolio" />
 
       {/* Toggle Buttons */}
       <div className="flex justify-center mb-6 space-x-4">
-       {categories.map((cat) => (
-  <button
-    key={cat}
-    onClick={() => {
-      setSelectedCategory(cat);
-      setSelectedIndex(null);
-    }}
-    className={`px-4 py-2 rounded ${selectedCategory === cat
-      ? "bg-orange-600 text-white"
-      : "bg-gray-200 text-gray-700 hover:bg-orange-100"
-    }`}
-  >
-    {cat.replace(/-/g, ' ').replace(/\b\w/g, (l) => l.toUpperCase())}
-  </button>
-))}
-
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => {
+              setSelectedCategory(cat);
+              setSelectedIndex(null);
+            }}
+            className={`px-4 py-2 rounded ${
+              selectedCategory === cat
+                ? "bg-orange-600 text-white"
+                : "bg-gray-200 text-gray-700 hover:bg-orange-100"
+            }`}
+          >
+            {cat.replace(/-/g, " ").replace(/\b\w/g, (l) => l.toUpperCase())}
+          </button>
+        ))}
       </div>
 
       {/* Images Grid */}
