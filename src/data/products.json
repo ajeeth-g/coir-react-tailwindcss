@@ -62,7 +62,7 @@
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Color", "Product Name": "Twisted Fibre" },
+          { "label": "Color", "value": "Twisted Fibre" },
           { "label": "Moisture", "value": "<18% Meter Reading" },
           { "label": "Per Meter", "value": "60-70" },
           { "label": "Weight", "value": "22-26kgs Net Per" },
@@ -94,7 +94,7 @@
       {
         "type": "specsUses",
         "specs": [
-          { "label": "EC", "Product Name": "Low EC < 0.8 mS/cm" },
+          { "label": "EC", "value": "Low EC < 0.8 mS/cm" },
           { "label": "Moisture", "value": "10 to 15 %" },
           { "label": "Chips Size", "value": "8 – 12 mm (Medium)" },
           { "label": "CR", "value": "5:1" },
@@ -259,7 +259,7 @@
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Color", "Product Name": "Coir White" },
+          { "label": "Color", "value": "Coir White" },
           { "label": "Moisture", "value": "up to 15%" },
           { "label": "Impurity", "value": "< 3%" },
           { "label": "Length", "value": "5cm to 25cm" },
@@ -285,7 +285,7 @@
         "type": "textImage",
         "layout": "leftText",
         "title": "Hooks",
-        "description": "Hooks for baskets are sturdy, corrosion-resistant fittings designed to securely hold and suspend coir or metal hanging baskets. Typically made from galvanized iron, stainless steel, or powder-coated steel, these hooks provide strength, durability, and protection against outdoor weather conditions. They come in various shapes such as "S-hooks," ceiling hooks, and wall-mounted brackets to suit different installation needs. Widely used in gardening, landscaping, and interior décor, basket hooks allow safe suspension of flowering plants, decorative arrangements, and grow baskets, ensuring both functional support and aesthetic appeal. Their ease of use, reliability, and long service life make them an essential accessory in the horticulture and home décor industry.",
+        "description": "Hooks for baskets are sturdy, corrosion-resistant fittings designed to securely hold and suspend coir or metal hanging baskets. Typically made from galvanized iron, stainless steel, or powder-coated steel, these hooks provide strength, durability, and protection against outdoor weather conditions. They come in various shapes such as \"S-hooks,\" ceiling hooks, and wall-mounted brackets to suit different installation needs. Widely used in gardening, landscaping, and interior décor, basket hooks allow safe suspension of flowering plants, decorative arrangements, and grow baskets, ensuring both functional support and aesthetic appeal. Their ease of use, reliability, and long service life make them an essential accessory in the horticulture and home décor industry.",
         "image": "GardenArticles_1.jpg"
       },
       {
