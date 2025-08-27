@@ -274,5 +274,41 @@
         ]
       }
     ]
+  },
+  {
+    "id": "Garden Articles",
+    "title": "Garden Articles",
+    "description": "From poles to plant pots to hanging baskets, coir makes just about every accessory that is essential for modern day gardening.",
+    "image": "GardenArticles_r07.jpg",
+    "detailSections": [
+      {
+        "type": "textImage",
+        "layout": "leftText",
+        "title": "Hooks",
+        "description": "Hooks for baskets are sturdy, corrosion-resistant fittings designed to securely hold and suspend coir or metal hanging baskets. Typically made from galvanized iron, stainless steel, or powder-coated steel, these hooks provide strength, durability, and protection against outdoor weather conditions. They come in various shapes such as "S-hooks," ceiling hooks, and wall-mounted brackets to suit different installation needs. Widely used in gardening, landscaping, and interior décor, basket hooks allow safe suspension of flowering plants, decorative arrangements, and grow baskets, ensuring both functional support and aesthetic appeal. Their ease of use, reliability, and long service life make them an essential accessory in the horticulture and home décor industry.",
+        "image": "GardenArticles_1.jpg"
+      },
+      {
+        "type": "textImage",
+        "layout": "leftImage",
+        "title": "Basket",
+        "description": "Baskets are versatile containers traditionally crafted from materials such as coir fibre, metal, bamboo, or other natural and durable resources. In the coir industry, baskets are often produced by combining coir liners with metal frames, creating sturdy yet breathable holders ideal for gardening and decorative purposes. Coir-lined baskets retain moisture for plant roots while ensuring proper aeration, making them particularly popular for hanging plants, balcony gardens, and landscaping. Metal-framed baskets provide structural strength, while the coir lining adds a natural, eco-friendly touch. Beyond horticulture, baskets serve a wide range of applications, from storage and home décor to gifting and retail display, valued for their durability, sustainability, and timeless aesthetic appeal.",
+        "image": "GardenArticles_2.jpg"
+      },
+      {
+        "type": "specsUses",
+        "specs": [
+          { "label": "Color", "value": "Brown and Golden Yellow" },
+          { "label": "Moisture", "value": "15% - 20%" },
+          { "label": "Impurity", "value": "3% max" }
+        ],
+        "uses": [
+          "making carpets",
+          "making finer brushes",
+          "rope and fishing nets",
+          "making finer brushes"
+        ]
+      }
+    ]
   }
 ]
