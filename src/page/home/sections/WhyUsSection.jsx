@@ -4,7 +4,6 @@ import hero3 from "../../../assets/Home_3.jpg";
 const WhyUsSection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 gap-6 px-12 mx-auto w-full">
-      
       {/* Left text block - Our Vision */}
       <div className="md:col-span-4 bg-slate-700 text-white p-8 text-4xl md:text-5xl font-bold rounded-2xl flex items-center justify-center text-center">
         <span className="opacity-60">Our Vision</span>
@@ -19,9 +18,13 @@ const WhyUsSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex items-end">
           <p className="text-white text-sm sm:text-base font-medium">
-            Coir is a natural and sustainable by-product of coconut, widely used in agriculture,
-            horticulture, and erosion control. It supports eco-friendly solutions and provides
-            rural employment.
+            To emerge as the world’s most reliable, future-ready, and
+            environmentally conscious coir manufacturer — delivering innovative,
+            high-performance solutions that support sustainable agriculture,
+            advanced horticulture, and eco-focused industries worldwide. At
+            Lumicos, we envision a future where automation, integrity, and
+            global excellence drive every fiber we produce and every partnership
+            we build.
           </p>
         </div>
       </div>
@@ -35,8 +38,13 @@ const WhyUsSection = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex items-end">
           <p className="text-white text-sm sm:text-base font-medium">
-            Through coir production, many rural women are empowered with livelihood opportunities,
-            fostering independence and sustainable development in underrepresented regions.
+            To deliver consistent, export-quality coir products that not only
+            meet but surpass global expectations — through precision
+            manufacturing, ethical practices, and a relentless focus on
+            innovation. We aim to empower our customers, support our people, and
+            protect the planet by building a business rooted in trust,
+            transparency, long-term value, and a deep respect for natural
+            resources.
           </p>
         </div>
       </div>

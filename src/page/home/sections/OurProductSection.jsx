@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ProductCard from "../../../components/ProductCard";
 import products from "../../../data/products.json";
 import { images } from "../../../assets";
@@ -34,9 +34,12 @@ const OurProductSection = () => {
         <h2 className="text-orange-600 font-bold text-4xl">
           Our Product Categories
         </h2>
-        <button className="inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition duration-300 bg-orange-600 hover:bg-orange-50 hover:text-orange-600">
+        <Link
+          className="inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition duration-300 bg-orange-600 hover:bg-orange-50 hover:text-orange-600"
+          to="/products"
+        >
           View All Product Categories
-        </button>
+        </Link>
       </div>
 
       {/* Scroll Controls */}

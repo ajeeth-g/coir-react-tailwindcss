@@ -10,10 +10,13 @@ const AboutUsSection = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <p className="text-4xl font-bold text-orange-600 max-w-6xl tracking-wide leading-snug">
-        SSS GLOBAL is an organization commenced for promotion of eco-friendly
-        products which are the need of the day and future in India and also the
-        whole world, started in the year 2008.
+      <p className="text-2xl font-medium text-orange-600 max-w-6xl tracking-wide leading-snug">
+        Founded in 2008 as SSS Global, we began as a trading firm with a modest
+        turnover of USD 0.2 million. Over the years, with a strong commitment to
+        quality and customer satisfaction, we have grown into one of India's top
+        5 coir exporters, now achieving a turnover of over USD 7 million and a
+        solid footprint in global horticulture and garden markets. SSS Global is
+        now rebranded as Lumicos LLP
       </p>
 
       <button className="inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition-colors duration-200 bg-orange-600 hover:bg-cornsilk hover:text-orange-600">

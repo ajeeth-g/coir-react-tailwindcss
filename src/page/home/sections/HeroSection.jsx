@@ -24,9 +24,7 @@ const HeroSection = () => {
       {/* Left: Text Content */}
       <div className="w-full md:w-1/3">
         <h1 className="text-3xl md:text-5xl font-extrabold text-orange-800 leading-snug mb-6">
-          Seeding Success with the Best
-          <br />
-          Coir Products Manufacturing
+          Your Trusted Partner for Premium Coir Exports
         </h1>
         <Link
           to="/products"
@@ -46,8 +44,9 @@ const HeroSection = () => {
             key={index}
             src={src}
             alt={`Slide ${index + 1}`}
-            className={`object-cover w-full h-64 md:h-full transition-opacity duration-1000 absolute top-0 left-0 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
+            className={`object-cover w-full h-64 md:h-full transition-opacity duration-1000 absolute top-0 left-0 ${
+              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
           />
         ))}
         {/* Pagination dots */}
@@ -56,8 +55,9 @@ const HeroSection = () => {
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
-                }`}
+              className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
+              }`}
             />
           ))}
         </div>

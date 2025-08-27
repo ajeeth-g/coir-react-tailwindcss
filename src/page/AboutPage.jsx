@@ -21,11 +21,26 @@ const AboutPage = () => {
               Who We Are
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              At <strong>SSS Global</strong>, we’re passionate about delivering
-              cutting-edge solutions to empower agriculture and rural
-              innovation. With a team of experienced professionals, we strive to
-              bring affordable and accessible technology to farmers, businesses,
-              and communities across India.
+              Founded in 2008 as SSS Global, we began as a trading firm with a
+              modest turnover of USD 0.2 million. Over the years, with a strong
+              commitment to quality and customer satisfaction, we have grown
+              into one of India’s top 5 coir exporters, now achieving a turnover
+              of over USD 7 million and a solid footprint in global horticulture
+              and garden markets.
+              <br />
+              <div className="mt-2">
+                As part of our evolution, we became one of the few companies in
+                India to manufacture both coir liners and metal baskets under
+                one roof, offering fully integrated B2B export solutions to
+                international buyers.
+              </div>
+              <div className="font-semibold mt-2 text-orange-600">
+                SSS Global is now rebranded as Lumicos LLP — a name that
+                reflects our forward-thinking approach and our commitment to
+                automation, sustainability, and manufacturing excellence. With
+                precision-driven processes and scalable capacity, we serve
+                high-demand markets with reliability and consistency.
+              </div>
             </p>
           </div>
           <div className="md:w-1/2 overflow-hidden rounded-3xl">
@@ -46,8 +61,9 @@ const AboutPage = () => {
               Our Blossom
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              To simplify agri-business and empower growth through scalable,
-              sustainable technology solutions built with integrity and purpose.
+              From our humble start in 2008 as SSS Global to becoming Lumicos
+              LLP, we’ve grown into one of India’s top coir exporters, driven by
+              precision, trust, and sustainable innovation.
             </p>
           </div>
           <div>
@@ -55,8 +71,9 @@ const AboutPage = () => {
               Our Vision
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              To be a leader in agricultural innovation, fostering prosperity in
-              rural India and beyond.
+              To be the world’s most reliable and forward-thinking supplier of
+              eco-friendly coir products — driving agricultural and industrial
+              sustainability through innovation, automation, and integrity.
             </p>
           </div>
           <div>
@@ -64,8 +81,9 @@ const AboutPage = () => {
               Our Mission
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              We aim to empower communities through innovation, sustainability,
-              and inclusive agricultural practices.
+              To deliver consistent, high-quality coir solutions that meet
+              global standards, exceed customer expectations, and empower our
+              partners through trust, transparency, and long-term value.
             </p>
           </div>
           <div>
@@ -73,8 +91,9 @@ const AboutPage = () => {
               Our Goal
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              To create long-term value for stakeholders through continuous
-              learning, transparent processes, and meaningful impact.
+              To expand Lumicos into a globally recognized coir brand by scaling
+              automated production, entering new markets, and setting new
+              benchmarks for quality, service, and environmental responsibility.
             </p>
           </div>
         </div>
@@ -90,21 +109,25 @@ const AboutPage = () => {
             <Users className="mx-auto text-orange-600 mb-4" size={40} />
             <h4 className="text-xl font-semibold mb-2">Expert Team</h4>
             <p className="text-gray-600 text-sm">
-              A diverse team of professionals with deep domain expertise.
+              Led by experienced professionals and skilled technicians, our team
+              drives excellence through deep industry knowledge and hands-on
+              execution.
             </p>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
             <Rocket className="mx-auto text-orange-600 mb-4" size={40} />
             <h4 className="text-xl font-semibold mb-2">Innovation Driven</h4>
             <p className="text-gray-600 text-sm">
-              We innovate with the future in mind, blending tech and tradition.
+              Rooted in consistency and global benchmarks, our quality approach
+              ensures every product meets the highest international standards.
             </p>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
             <ShieldCheck className="mx-auto text-orange-600 mb-4" size={40} />
             <h4 className="text-xl font-semibold mb-2">Trust & Transparency</h4>
             <p className="text-gray-600 text-sm">
-              We uphold ethical values and deliver transparent solutions.
+              We believe in honest practices, open communication, and long-term
+              relationships built on reliability, clarity, and mutual respect.
             </p>
           </div>
         </div>
@@ -116,7 +139,7 @@ const AboutPage = () => {
           Ready to grow with us?
         </h3>
         <p className="text-gray-700 mb-6">
-          Contact us today and explore how SSS Global can help your business
+          Contact us today and explore how Lumicos LLP can help your business
           thrive.
         </p>
         <a
