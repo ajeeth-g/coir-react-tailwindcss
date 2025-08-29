@@ -28,14 +28,14 @@ const OurProductSection = () => {
   };
 
   return (
-    <section className="py-12 max-w-7xl mx-auto">
+    <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Header */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left mb-10">
-        <h2 className="text-orange-600 font-bold text-4xl">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-center sm:text-left mb-8 sm:mb-10">
+        <h2 className="text-orange-600 font-bold text-2xl sm:text-3xl lg:text-4xl">
           Our Product Categories
         </h2>
         <Link
-          className="inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition duration-300 bg-orange-600 hover:bg-orange-50 hover:text-orange-600"
+          className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition duration-300 bg-orange-600 hover:bg-orange-50 hover:text-orange-600 text-sm sm:text-base"
           to="/products"
         >
           View All Product Categories
@@ -47,20 +47,26 @@ const OurProductSection = () => {
         {/* Scroll container */}
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory scrollbar-custom"
+          className="flex gap-3 sm:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory scrollbar-custom pb-4"
         >
           {products.map((p) => (
             <div
               key={p.id}
-              className="flex-shrink-0 w-[calc(25%-1.5rem)] snap-start"
-              style={{ minWidth: "280px" }}
+              className="flex-shrink-0 snap-start"
+              style={{
+                width: "calc(100vw - 2rem)",
+                minWidth: "280px",
+                maxWidth: "320px"
+              }}
             >
-              <ProductCard
-                title={p.title}
-                description={p.description}
-                image={images[p.image]}
-                onClick={() => navigate(`/products/${p.id}`)}
-              />
+              <div className="w-full sm:w-auto sm:min-w-[280px] sm:max-w-[320px] lg:min-w-[300px] lg:max-w-[350px]">
+                <ProductCard
+                  title={p.title}
+                  description={p.description}
+                  image={images[p.image]}
+                  onClick={() => navigate(`/products/${p.id}`)}
+                />
+              </div>
             </div>
           ))}
         </div>
@@ -68,7 +74,7 @@ const OurProductSection = () => {
         {/* Left Button */}
         <button
           onClick={scrollLeft}
-          className="hidden md:flex absolute top-1/2 left-0 -translate-y-1/2 bg-white rounded-full shadow-md p-3 text-orange-600 hover:bg-orange-50 transition"
+          className="hidden lg:flex absolute top-1/2 left-0 -translate-y-1/2 bg-white rounded-full shadow-md p-3 text-orange-600 hover:bg-orange-50 transition z-10"
           aria-label="Scroll left"
         >
           <ChevronLeft size={24} />
@@ -77,7 +83,7 @@ const OurProductSection = () => {
         {/* Right Button */}
         <button
           onClick={scrollRight}
-          className="hidden md:flex absolute top-1/2 right-0 -translate-y-1/2 bg-white rounded-full shadow-md p-3 text-orange-600 hover:bg-orange-50 transition"
+          className="hidden lg:flex absolute top-1/2 right-0 -translate-y-1/2 bg-white rounded-full shadow-md p-3 text-orange-600 hover:bg-orange-50 transition z-10"
           aria-label="Scroll right"
         >
           <ChevronRight size={24} />
