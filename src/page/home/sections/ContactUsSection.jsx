@@ -13,44 +13,39 @@ const ContactUsSection = () => {
 
           <div className="space-y-4 text-sm text-orange-100">
             <p className="flex items-center gap-2">
-              📍 <span>Pollachi, Tamil Nadu</span>
+              📍{" "}
+              <span>
+                {" "}
+                Head Office - 30 Sri MKK Enclave, Marapettai Street, Pollachi
+                642001, Tamil Nadu, India Factory - 139/3B , Chandirapuram
+                Pirivu,Thippampatti (PO), Pollachi - 642103. Coimbatore,Tamil
+                Nadu,India.
+              </span>
             </p>
             <p className="flex items-center gap-2">
-              📞 <span>+91 90921 55212</span>
+              📍{" "}
+              <span>
+                Factory - 139/3B , Chandirapuram Pirivu,Thippampatti (PO),
+                Pollachi - 642103. Coimbatore,Tamil Nadu,India.
+              </span>
             </p>
             <p className="flex items-center gap-2">
-              ✉️ <span>info@sss-global.com</span>
+              📞 <span>+91 99654 05999</span>
             </p>
-          </div>
-
-          <div className="flex gap-4 pt-2">
-            <a href="#" className="hover:text-orange-300 transition">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor"><path
-                  strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                  d="M18.364 5.636l-1.414 1.414a4 4 0 01-5.657 0l-3.535-3.535a2 2 0 00-2.828 0L4.222 6.222a2 2 0 000 2.828l3.535 3.535a4 4 0 010 5.657l-1.414 1.414" />
-              </svg>
-            </a>
-            <a href="#" className="hover:text-orange-300 transition">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none"
-                viewBox="0 0 24 24" stroke="currentColor"><path
-                  strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
-                  d="M17 8h2a2 2 0 012 2v10a2 2 0 01-2 2h-6v-7H9v7H3a2 2 0 01-2-2V10a2 2 0 012-2h2" />
-              </svg>
-            </a>
-            {/* Add more icons as needed */}
+            <p className="flex items-center gap-2">
+              ✉️ <span>gaurav@lumicos.com</span>
+            </p>
           </div>
         </div>
-
 
         {/* Form Section */}
         <div className="col-span-2 bg-white p-8 rounded-3xl shadow-lg">
           <h2 className="text-3xl font-bold text-orange-600 mb-4 leading-tight">
-            Join Us and “SSS Global” to <br /> the Best Experience
+            Join hands with Lumicos LLP to experience the best.
           </h2>
 
           <h3 className="text-lg text-gray-600 mb-8">
-            Give your seed the benefits of the perfect environment to yield.
+            Give your seeds the perfect environment to thrive.
           </h3>
 
           <form className="grid grid-cols-1 sm:grid-cols-2 gap-6">

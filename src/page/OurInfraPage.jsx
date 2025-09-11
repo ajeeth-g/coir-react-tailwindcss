@@ -92,14 +92,14 @@ const OurInfraPage = () => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-600 leading-tight">
-            We Provide World-Class Infrastructure
+            Coconut Husk Unit
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Our modern production units are designed to meet the highest
-            standards of quality and efficiency. We use eco-friendly
-            technologies and provide a safe and empowering workspace to rural
-            communities.
-          </p>
+          <ul className="text-gray-600 text-lg leading-relaxed space-y-3 list-disc list-inside">
+            <li>Coconut husk also known as are the container which extracted from the outer surface of coconut. Coconut Husk provides useful products and this is also one of the good product from the coconut tree.</li>
+            <li>Coconut tree is another miracle tree and this tree produces the greater production to entire market. In my previous articles I have mentioned several various important production from coconut fruit.</li>
+            <li>So in here I am planning to mention the important production which created by the outer shell of this coconut fruit. The chemical composition of coconut husks consists of cellulose, lignin, pyroligneous acid, gas, charcoal, tar, tannin, and potassium.</li>
+            <li>The predominant use of coconut husks is in direct combustion in order to make charcoal, otherwise husks are simply thrown away.</li>
+          </ul>
         </div>
       </section>
 
@@ -108,14 +108,14 @@ const OurInfraPage = () => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-600 leading-tight">
-            Empowering Local Communities
+            Coconut Fibre Bale Unit
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            We are committed to sustainable development through rural
-            employment, skill-building, and community-led production. Our
-            infrastructure is more than machinery—it's a platform for growth and
-            inclusion.
-          </p>
+          <ul className="text-gray-600 text-lg leading-relaxed space-y-3 list-disc list-inside">
+            <li>Coconut fiber-based products introduced to the western world in a late 19th century and now it's a huge industry which creates lots of products which now a huge industry.</li>
+            <li>Coconut coir is made out of the external hard (shell of coconut husk) part of the coconut fruit. Ropes have tensile strength and so can be used for dragging and lifting, but are too flexible to provide compressive strength.</li>
+            <li>As a result, they cannot be used for pushing or similar compressive applications. Rope is thicker and stronger than similarly constructed cord, string, and twine.</li>
+            <li>Rope may be constructed of any long, stringy, fibrous material, but generally is constructed of certain natural or synthetic fibres. Synthetic fibre ropes are significantly stronger than their natural fibre counterparts, but also possess certain disadvantages, including slipperiness.</li>
+          </ul>
         </div>
 
         {/* Carousel Container 2 */}
@@ -175,14 +175,14 @@ const OurInfraPage = () => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-600 leading-tight">
-            We Provide World-Class Infrastructure
+            Coconut Pith Block Unit
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Our modern production units are designed to meet the highest
-            standards of quality and efficiency. We use eco-friendly
-            technologies and provide a safe and empowering workspace to rural
-            communities.
-          </p>
+          <ul className="text-gray-600 text-lg leading-relaxed space-y-3 list-disc list-inside">
+            <li>A spongy material that binds the coconut fibre in the husk, coir pith is finding new applications. It is an excellent soil conditioner and is being extensively used as a soil-less medium for agri-horticultural purposes.</li>
+            <li>Available in raw form or converted into organic manure. Pith is a multi purpose growing medium that provides new opportunities for: Potting Mix Suppliers, Seedling Nurseries, Hydroponics Growers and Golf Green Constructors.</li>
+            <li>The presence of organic compounds in pith can results strong root growth compare with other growing medium.</li>
+            <li>In addition it offers some natural resistance to plant diseases, so the plant live span will be long. Low Ec coco peat is used as Growing mediums</li>
+          </ul>
         </div>
       </section>
 
@@ -191,14 +191,14 @@ const OurInfraPage = () => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-600 leading-tight">
-            Empowering Local Communities
+            Coconut Chips Unit
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            We are committed to sustainable development through rural
-            employment, skill-building, and community-led production. Our
-            infrastructure is more than machinery—it's a platform for growth and
-            inclusion.
-          </p>
+          <ul className="text-gray-600 text-lg leading-relaxed space-y-3 list-disc list-inside">
+            <li>Coco coir husk chips, an organic and natural mulch are made from coconut shells (husk) making them a highly sustainable alternative to other mulch options.</li>
+            <li>The durable coconut fiber husk-chips can withstand inclement weather and break down at a more measured and even rate than other bark chips.</li>
+            <li>High-quality coco coir chips absorb water and retain it, slowly releasing over time. Husks cut into chunks, the coco husk chips allow for better aeration and water flow to plants and are ideal for soilless plants like orchids and as landscaping mulch.</li>
+            <li>Commonly mixed with coco coir growing medium to provide better aeration for plants. This versatile coco coir chips growing medium is capable of filling a variety of needs.</li>
+          </ul>
         </div>
 
         {/* Carousel Container 2 */}
@@ -258,14 +258,14 @@ const OurInfraPage = () => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-600 leading-tight">
-            We Provide World-Class Infrastructure
+            Twisted Fibre Unit
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            Our modern production units are designed to meet the highest
-            standards of quality and efficiency. We use eco-friendly
-            technologies and provide a safe and empowering workspace to rural
-            communities.
-          </p>
+          <ul className="text-gray-600 text-lg leading-relaxed space-y-3 list-disc list-inside">
+            <li>Twisted fibre is also a very popular method of transporting fibre. Both mattress fibre & mix fibre can be twisted in to coils.</li>
+            <li>20 KG coils are the most commonly use size of a coil, however 50 KG or even 100 KG coils also could be made out of our twisting machinery.</li>
+            <li>Twisted fibre is mostly used for making mattress, twisting give the fibers a curling effect which is necessary for latex to penetrate well in to & within the fibers when manufacturing latex mattresses and cushions.</li>
+            <li>We are known for our quality and have earned innumerable customers from overall india. It is widely used in number of industries for various purposes. Our coconut coir fiber is available at market leading prices.</li>
+          </ul>
         </div>
       </section>
 
@@ -274,14 +274,14 @@ const OurInfraPage = () => {
         {/* Text Content */}
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-600 leading-tight">
-            Empowering Local Communities
+            Garden Articles Unit
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            We are committed to sustainable development through rural
-            employment, skill-building, and community-led production. Our
-            infrastructure is more than machinery—it's a platform for growth and
-            inclusion.
-          </p>
+          <ul className="text-gray-600 text-lg leading-relaxed space-y-3 list-disc list-inside">
+            <li>Coir are made in natural coconut fiber and rubber(rubberized to hold the pot together). They are produced for use in horticulture forms, flower gardens, green houses, and nurseries.</li>
+            <li>Coir pots are 100% eco-friendly and transforms into organic matter on decomposing. Use supply coir pots/baskets in various size accordingly to customer needs and requirements.</li>
+            <li>Plants grow in these pots benefit from air pruning plant roots will grow through the pot walls encouraging strong root systems.</li>
+            <li>Products made out of Coir fibre. From poles to plant pots to hanging baskets, coir makes just about every accessory that is essential for modern day gardening.</li>
+          </ul>
         </div>
 
         {/* Carousel Container 2 */}

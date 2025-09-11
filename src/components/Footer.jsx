@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo & Tagline */}
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-orange-500">SSS Global</h2>
+          <h2 className="text-2xl font-bold mb-4 text-orange-500">Lumicos LLP</h2>
           <p className="text-gray-300">
             Accelerating your success with smart solutions tailored to grow.
           </p>
@@ -33,9 +33,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Contact</h3>
           <ul className="text-gray-300 space-y-2">
-            <li>Email: info@sssglobal.com</li>
-            <li>Phone: +91 90921 55212</li>
-            <li>Location: Pollachi, Tamil Nadu</li>
+            <li>Email: gaurav@lumicos.com</li>
+            <li>Phone: +91 99654 05999</li>
+            <li>Location: 30 Sri MKK Enclave, Marapettai Street, Pollachi 642001, Tamil Nadu, India</li>
           </ul>
         </div>
 
@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-10 text-center text-gray-400 text-sm border-t border-slate-600 pt-6 px-6">
-        © {new Date().getFullYear()} SSS Global. All rights reserved.
+        © {new Date().getFullYear()} Lumicos LLP. All rights reserved.
       </div>
     </footer>
   );

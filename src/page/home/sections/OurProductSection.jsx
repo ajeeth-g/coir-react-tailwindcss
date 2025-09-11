@@ -56,7 +56,7 @@ const OurProductSection = () => {
               style={{
                 width: "calc(100vw - 2rem)",
                 minWidth: "280px",
-                maxWidth: "320px"
+                maxWidth: "320px",
               }}
             >
               <div className="w-full sm:w-auto sm:min-w-[280px] sm:max-w-[320px] lg:min-w-[300px] lg:max-w-[350px]">

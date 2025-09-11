@@ -3,25 +3,25 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 
 const faqData = [
   {
-    question: "What services do you offer?",
+    question: "What types of coir products do you offer?",
     answer:
-      "We provide end-to-end agricultural solutions including soil testing, crop consultation, and customized seed recommendations."
+      "We manufacture and export a wide range of coir products including coir fibre (mattress, bristle, twisted, mixed), coir peat blocks (5kg, 650g, bulk bags), coco chips, grow bags, nursery products (coins, pellets, cubes), rubberised coir, coir liners, and baskets.",
   },
   {
-    question: "How can I contact your support team?",
+    question: "Which countries do you export to?",
     answer:
-      "You can reach us through our contact form or call our support line between 9AM–6PM on weekdays."
+      "Our products are exported to over 10+ countries including China, Spain, Poland, Netherlands, Australia, South America, USA, Korea, and Germany, serving the global horticulture, agriculture, and industrial markets.",
   },
   {
-    question: "Do you offer bulk purchase discounts?",
+    question: "Do you provide customization for bulk orders?",
     answer:
-      "Yes, we offer discounts for bulk orders. Contact our sales team for custom pricing."
+      "Yes. We specialize in tailored B2B solutions, offering product customization in size, packaging, and specifications to meet the unique needs of each market.",
   },
   {
-    question: "Where are your offices located?",
+    question: "How do you ensure the quality of your coir products?",
     answer:
-      "Our headquarters is located in Tamil Nadu, and we have regional offices across South India."
-  }
+      "Every product goes through strict quality checks — from raw material selection to processing and final packaging. With ISO & international certifications, modern automation, and skilled teams, we guarantee consistency, durability, and eco-friendly excellence.",
+  },
 ];
 
 const FAQSection = () => {

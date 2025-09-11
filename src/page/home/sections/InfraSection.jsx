@@ -11,8 +11,6 @@ import hero5 from "../../../assets/Infra_15.jpg";
 import hero6 from "../../../assets/Infra_9.jpg";
 import hero7 from "../../../assets/Infra_22.jpg";
 
-
-
 const images = [hero1, hero2, hero3, hero4, hero5, hero6, hero7];
 
 const InfraSection = () => {
@@ -34,8 +32,9 @@ const InfraSection = () => {
             key={index}
             src={src}
             alt={`Slide ${index + 1}`}
-            className={`object-cover w-full h-full absolute top-0 left-0 transition-opacity duration-1000 ${index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
-              }`}
+            className={`object-cover w-full h-full absolute top-0 left-0 transition-opacity duration-1000 ${
+              index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
           />
         ))}
         {/* Pagination dots */}
@@ -44,8 +43,9 @@ const InfraSection = () => {
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`w-3 h-3 rounded-full transition-all duration-200 ${idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
-                }`}
+              className={`w-3 h-3 rounded-full transition-all duration-200 ${
+                idx === currentIndex ? "bg-orange-600 w-4 h-4" : "bg-white"
+              }`}
             />
           ))}
         </div>
@@ -57,10 +57,18 @@ const InfraSection = () => {
           We Provide World-Class Infrastructure
         </h2>
         <p className="text-gray-600 text-lg leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-          molestias nemo velit odit voluptatibus modi doloribus ullam
-          assumenda? Dolor nemo porro ea veniam esse unde veritatis pariatur
-          dolore obcaecati aliquam.
+          At Lumicos LLP, our infrastructure is the backbone of our global
+          success in coir manufacturing. Equipped with state-of-the-art
+          machinery, fully automated processing lines, and dedicated quality
+          control units, we ensure consistent excellence in every product we
+          deliver. Our facilities are strategically located in Pollachi, the
+          heart of India’s coir industry, giving us direct access to premium raw
+          materials. From fibre extraction to product finishing, every stage is
+          carefully monitored with advanced technology and skilled
+          craftsmanship. With modern warehousing, efficient logistics, and
+          eco-friendly production practices, our infrastructure empowers us to
+          meet large-scale global demands while maintaining sustainability,
+          precision, and timely delivery.
         </p>
 
         <Link
