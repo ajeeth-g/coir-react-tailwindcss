@@ -12,6 +12,12 @@ const Contact = () => {
 
         <div className="space-y-4 text-sm text-orange-100">
           <p className="flex items-center gap-2">
+            📞 <span>+91 99654 05999</span>
+          </p>
+          <p className="flex items-center gap-2">
+            ✉️ <span>gaurav@lumicos.com</span>
+          </p>
+          <p className="flex items-center gap-2">
             📍{" "}
             <span>
               {" "}
@@ -27,12 +33,6 @@ const Contact = () => {
               Factory - 139/3B , Chandirapuram Pirivu,Thippampatti (PO),
               Pollachi - 642103. Coimbatore,Tamil Nadu,India.
             </span>
-          </p>
-          <p className="flex items-center gap-2">
-            📞 <span>+91 99654 05999</span>
-          </p>
-          <p className="flex items-center gap-2">
-            ✉️ <span>gaurav@lumicos.com</span>
           </p>
         </div>
       </div>

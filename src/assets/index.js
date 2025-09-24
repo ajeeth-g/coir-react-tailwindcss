@@ -11,6 +11,9 @@ import CoirPeat_r03 from "./CoirPeat_r03.png";
 import CocoGrowBag_r04 from "./CocoGrowBag_r04.png";
 import Nursery_r06 from "./Nursery_r06.png";
 import RubberisedCoir_r09 from "./RubberisedCoir_r09.png";
+import GardenArticles_r07 from "./GardenArticles_r07.png";
+import GardenArticles_1 from "./GardenArticles_1.jpg";
+import GardenArticles_2 from "./GardenArticles_2.jpg";
 
 // Product detail images
 import CoconutFiber_2 from "./CoconutFiber_2.jpg";
@@ -41,6 +44,9 @@ export const images = {
   "CocoGrowBag_r04.png": CocoGrowBag_r04,
   "Nursery_r06.png": Nursery_r06,
   "RubberisedCoir_r09.png": RubberisedCoir_r09,
+  "GardenArticles_r07.jpg": GardenArticles_r07,
+  "GardenArticles_1.jpg": GardenArticles_1,
+  "GardenArticles_2.jpg": GardenArticles_2,
   
   // Product detail images
   "CoconutFiber_2.jpg": CoconutFiber_2,

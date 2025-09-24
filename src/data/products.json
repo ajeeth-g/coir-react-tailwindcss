@@ -3,14 +3,14 @@
     "id": "Coconut Fibre",
     "title": "Coconut Fibre",
     "description": "Coconut fiber has very long history, Ancient navigators widely use these coconut fiber based ropes for their ships over long period.",
-    "image": "CoconutFiber_r01.png",
+    "image": "CoconutFiber_r01.jpg",
     "detailSections": [
       {
         "type": "textImage",
         "layout": "leftText",
         "title": "Mattress Fibre",
         "description": "Mattress fibre is a natural, coarse, and resilient material extracted from the outer husk of coconuts, commonly used as a core component in mattress production. It is known for its firm support, excellent breathability, and durability. Processed through defibering and drying, the coir fibres are curled, baled, or sheeted to form mattress pads or layered composites. These fibres offer a sustainable alternative to synthetic fillings, providing natural ventilation, moisture regulation, and resistance to dust mites and fungal growth — making them ideal for eco-friendly bedding applications.",
-        "image": "CoconutFiber_4.jpg"
+        "image": "CoconutFiber_4.png"
       },
       {
         "type": "textImage",
@@ -26,15 +26,29 @@
         "description": "Bristle fibre is the longest and most refined variety of coir fibre, manually extracted from mature coconut husks through a traditional retting and combing process. Known for its stiffness, strength, and superior length, bristle fibre is primarily used in the manufacture of high-quality brushes, brooms, and polishing tools. It is available in various grades such as hackled, semi-hackled, and unhackled, depending on the level of processing. Its natural resistance to water, durability, and ability to retain shape make it ideal for both industrial and household cleaning applications. Bristle fibre is also valued for its biodegradability and eco-friendly origin.",
         "image": "CoconutFiber_6.jpg"
       },
-
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Color", "value": "Brown and Golden Yellow" },
-          { "label": "Moisture", "value": "15% - 20%" },
-          { "label": "Impurity", "value": "3% max" },
-          { "label": "Length", "value": "5 cm - 25 cm" },
-          { "label": "Packing", "value": "Plastic Straps" }
+          {
+            "label": "Color",
+            "value": "Brown and Golden Yellow"
+          },
+          {
+            "label": "Moisture",
+            "value": "15% - 20%"
+          },
+          {
+            "label": "Impurity",
+            "value": "3% max"
+          },
+          {
+            "label": "Length",
+            "value": "5 cm - 25 cm"
+          },
+          {
+            "label": "Packing",
+            "value": "Plastic Straps"
+          }
         ],
         "uses": [
           "Mattress and cushion filling.",
@@ -50,23 +64,38 @@
     "id": "Twisted Fibre",
     "title": "Twisted Fibre",
     "description": "Twisting is simply the process of combining together multiple fibres, threads or yarns in a wrapping around (twisting) motion.",
-    "image": "TwistedFiber_r02.png",
+    "image": "TwistedFiber_r02.jpg",
     "detailSections": [
       {
         "type": "textImage",
         "layout": "leftText",
         "title": "Twisted Fibre",
         "description": "Twisted fibre is a mechanically processed form of coir fibre in which long strands are twisted into continuous ropes using specialized spinning machines. Produced mainly from brown coir, twisted fibre combines strength and flexibility, making it ideal for manufacturing curled coir, mattresses, rubberized coir pads, and erosion control products. The twisting process improves fibre alignment, enhances durability, and facilitates easy transport and handling. Known for its high tensile strength and natural resilience, twisted fibre plays a crucial role in applications where structured layering and compression resistance are essential.",
-        "image": "TwistedFiber_3.jpg"
+        "image": "TwistedFiber_3.png"
       },
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Color", "value": "Twisted Fibre" },
-          { "label": "Moisture", "value": "<18% Meter Reading" },
-          { "label": "Per Meter", "value": "60-70" },
-          { "label": "Weight", "value": "22-26kgs Net Per" },
-          { "label": "Packing", "value": "In Coils" }
+          {
+            "label": "Color",
+            "value": "Twisted Fibre"
+          },
+          {
+            "label": "Moisture",
+            "value": "<18% Meter Reading"
+          },
+          {
+            "label": "Per Meter",
+            "value": "60-70"
+          },
+          {
+            "label": "Weight",
+            "value": "22-26kgs Net Per"
+          },
+          {
+            "label": "Packing",
+            "value": "In Coils"
+          }
         ],
         "uses": [
           "Rope and fishing nets.",
@@ -82,7 +111,7 @@
     "id": "Coco Chips",
     "title": "Coco Chips",
     "description": "Coconut chips is rich in dietary fiber and minerals. It contains iron, magnesium, copper, manganese and pantothenic acid.",
-    "image": "CocoChips_r05.png",
+    "image": "CocoChips_r05.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -94,11 +123,26 @@
       {
         "type": "specsUses",
         "specs": [
-          { "label": "EC", "value": "Low EC < 0.8 mS/cm" },
-          { "label": "Moisture", "value": "10 to 15 %" },
-          { "label": "Chips Size", "value": "8 – 12 mm (Medium)" },
-          { "label": "CR", "value": "5:1" },
-          { "label": "Fiber Content", "value": "< 4 %" }
+          {
+            "label": "EC",
+            "value": "Low EC < 0.8 mS/cm"
+          },
+          {
+            "label": "Moisture",
+            "value": "10 to 15 %"
+          },
+          {
+            "label": "Chips Size",
+            "value": "8 – 12 mm (Medium)"
+          },
+          {
+            "label": "CR",
+            "value": "5:1"
+          },
+          {
+            "label": "Fiber Content",
+            "value": "< 4 %"
+          }
         ],
         "uses": [
           "Growing medium for orchids and exotic plants.",
@@ -114,7 +158,7 @@
     "id": "Coir Peat",
     "title": "Coir Peat",
     "description": "Coco peat increases the porosity of the potting mix. This helps to keep the soil loose and airy helping in better root growth.",
-    "image": "CoirPeat_r03.png",
+    "image": "CoirPeat_r03.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -137,15 +181,29 @@
         "description": "Bulk bag coir peat refers to loose, uncompressed or lightly compressed coir pith packaged in large, durable polypropylene jumbo bags, typically weighing between 300 to 1200 kg. This format is ideal for commercial growers and horticultural operations that require high-volume substrates with easy access and handling. The material offers excellent moisture retention, aeration, and a stable structure for root development. Bulk bags are commonly supplied in low EC (washed) or high EC (unwashed) grades, depending on the target crop and regional agricultural standards. Designed for forklift handling, these bags simplify large-scale applications and are widely used in greenhouses, soil mixing units, and nursery farms across the globe.",
         "image": "CoirPeat_8.jpg"
       },
-
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Moisture", "value": "10 to 15%" },
-          { "label": "Compression ratio", "value": "5 : 1" },
-          { "label": "EC", "value": "0.5ms/cm" },
-          { "label": "pH", "value": "5.2 to 6.8" },
-          { "label": "Expansion", "value": "70 to 80 liters" }
+          {
+            "label": "Moisture",
+            "value": "10 to 15%"
+          },
+          {
+            "label": "Compression ratio",
+            "value": "5 : 1"
+          },
+          {
+            "label": "EC",
+            "value": "0.5ms/cm"
+          },
+          {
+            "label": "pH",
+            "value": "5.2 to 6.8"
+          },
+          {
+            "label": "Expansion",
+            "value": "70 to 80 liters"
+          }
         ],
         "uses": [
           "Soil conditioner to retain moisture and improve aeration.",
@@ -161,7 +219,7 @@
     "id": "Coco Grow Bags",
     "title": "Coco Grow Bags",
     "description": "Grow bags are very useful growing in garden. It provides a perfect growing environment for a wide range of vegetables, fruits, flowers.",
-    "image": "CocoGrowBag_r04.png",
+    "image": "CocoGrowBag_r04.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -180,11 +238,26 @@
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Moisture", "value": "below 20%" },
-          { "label": "EC", "value": "Below 1 ms/cm" },
-          { "label": "CR", "value": "5:1" },
-          { "label": "pH", "value": "5.5 – 6.5" },
-          { "label": "Weight", "value": "3 kgs" }
+          {
+            "label": "Moisture",
+            "value": "below 20%"
+          },
+          {
+            "label": "EC",
+            "value": "Below 1 ms/cm"
+          },
+          {
+            "label": "CR",
+            "value": "5:1"
+          },
+          {
+            "label": "pH",
+            "value": "5.5 – 6.5"
+          },
+          {
+            "label": "Weight",
+            "value": "3 kgs"
+          }
         ],
         "uses": [
           "Hydroponic cultivation of vegetables.",
@@ -200,7 +273,7 @@
     "id": "Nursery",
     "title": "Nursery",
     "description": "Nurseries may supply plants for gardens, for agriculture, for forestry and for conservation biology.",
-    "image": "Nursery_r06.png",
+    "image": "Nursery_r06.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -223,15 +296,29 @@
         "description": "Coir cubes are compact, square-shaped blocks made from compressed coco peat or custom coir blends, primarily used for seed starting, cloning, and young plant propagation. Designed to expand upon hydration, these cubes offer a lightweight, well-aerated, and moisture-retentive environment that promotes strong root development. Their uniform size and structure make them ideal for use in plug trays, hydroponic systems, and commercial nurseries. Coir cubes are often wrapped in biodegradable mesh or netting for stability and easy handling during transplanting. Favored for their clean, eco-friendly nature and root-friendly texture, they are a sustainable alternative to rockwool or synthetic propagation media.",
         "image": "Nursery_16.jpg"
       },
-
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Raw Material", "value": "Coir Fiber Pith 100%" },
-          { "label": "Drying", "value": "Sun Drying and Sterilization" },
-          { "label": "Moisture Content", "value": "Between 15 to 20%" },
-          { "label": "pH", "value": "5.5 to 6.8" },
-          { "label": "Compression Ratio", "value": "8:1" }
+          {
+            "label": "Raw Material",
+            "value": "Coir Fiber Pith 100%"
+          },
+          {
+            "label": "Drying",
+            "value": "Sun Drying and Sterilization"
+          },
+          {
+            "label": "Moisture Content",
+            "value": "Between 15 to 20%"
+          },
+          {
+            "label": "pH",
+            "value": "5.5 to 6.8"
+          },
+          {
+            "label": "Compression Ratio",
+            "value": "8:1"
+          }
         ],
         "uses": [
           "Seed germination for vegetables, flowers, and herbs.",
@@ -247,7 +334,7 @@
     "id": "Rubberised Coir",
     "title": "Rubberised Coir",
     "description": "Pioneers in production and supply of Rubberised Coir use clean natural coir fibres and natural rubber latex.",
-    "image": "RubberisedCoir_r09.png",
+    "image": "RubberisedCoir_r09.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -259,11 +346,26 @@
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Color", "value": "Coir White" },
-          { "label": "Moisture", "value": "up to 15%" },
-          { "label": "Impurity", "value": "< 3%" },
-          { "label": "Length", "value": "5cm to 25cm" },
-          { "label": "Packing", "value": "Plastic straps" }
+          {
+            "label": "Color",
+            "value": "Coir White"
+          },
+          {
+            "label": "Moisture",
+            "value": "up to 15%"
+          },
+          {
+            "label": "Impurity",
+            "value": "< 3%"
+          },
+          {
+            "label": "Length",
+            "value": "5cm to 25cm"
+          },
+          {
+            "label": "Packing",
+            "value": "Plastic straps"
+          }
         ],
         "uses": [
           "Mattresses – orthopedic, spring-free, eco-friendly bedding.",
@@ -279,7 +381,7 @@
     "id": "Garden Articles",
     "title": "Garden Articles",
     "description": "From poles to plant pots to hanging baskets, coir makes just about every accessory that is essential for modern day gardening.",
-    "image": "GardenArticles_r07.jpg",
+    "image": "GardenArticles_r07.png",
     "detailSections": [
       {
         "type": "textImage",
@@ -298,9 +400,18 @@
       {
         "type": "specsUses",
         "specs": [
-          { "label": "Color", "value": "Brown and Golden Yellow" },
-          { "label": "Moisture", "value": "15% - 20%" },
-          { "label": "Impurity", "value": "3% max" }
+          {
+            "label": "Color",
+            "value": "Brown and Golden Yellow"
+          },
+          {
+            "label": "Moisture",
+            "value": "15% - 20%"
+          },
+          {
+            "label": "Impurity",
+            "value": "3% max"
+          }
         ],
         "uses": [
           "making carpets",

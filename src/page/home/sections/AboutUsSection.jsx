@@ -1,4 +1,5 @@
-import hero3 from "../../../assets/hero_3.jpg";
+import hero3 from "../../../assets/About_Us_2.jpg";
+import { Link } from "react-router-dom";
 
 const AboutUsSection = () => {
   return (
@@ -19,9 +20,9 @@ const AboutUsSection = () => {
         now rebranded as Lumicos LLP
       </p>
 
-      <button className="inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition-colors duration-200 bg-orange-600 hover:bg-cornsilk hover:text-orange-600">
+      <Link to="/about-us" className="inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition-colors duration-200 bg-orange-600 hover:bg-cornsilk hover:text-orange-600">
         Read More
-      </button>
+      </Link>
     </div>
   );
 };
