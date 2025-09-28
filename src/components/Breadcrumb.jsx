@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import aboutHero from "../assets/Home_1.jpg";
 
 const Breadcrumb = ({ items, title, bgImage = aboutHero}) => {
@@ -27,12 +28,12 @@ const Breadcrumb = ({ items, title, bgImage = aboutHero}) => {
                 </svg>
               )}
               {item.href ? (
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className="hover:text-white/90 transition-colors duration-200"
                 >
                   {item.label}
-                </a>
+                </Link>
               ) : (
                 <span className="text-white font-semibold">{item.label}</span>
               )}

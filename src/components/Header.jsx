@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import AnimatedLink from "./AnimatedLink";
-import Logo from "../assets/Logo.jpeg";
+import Logo from "../assets/Logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const Header = () => {
           <img
             src={Logo}
             alt="Lumicos Logo"
-            className="h-10 w-auto object-contain"
+            className="h-36 w-auto object-contain"
           />
         </div>
 
@@ -66,15 +66,15 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-      <div className="md:hidden absolute top-20 flex flex-col left-0 w-full bg-white py-6 px-6 space-y-4 shadow-md transition-all duration-300 z-40">
-        <AnimatedLink to="/" onClick={closeMenu}>Home</AnimatedLink>
-        <AnimatedLink to="/about-us" onClick={closeMenu}>About Us</AnimatedLink>
-        <AnimatedLink to="/products" onClick={closeMenu}>Products</AnimatedLink>
-        <AnimatedLink to="/our-infra" onClick={closeMenu}>Our Infra</AnimatedLink>
-        <AnimatedLink to="/our-portfolio" onClick={closeMenu}>Portfolio</AnimatedLink>
-        <AnimatedLink to="/contact-us" onClick={closeMenu}>Contact Us</AnimatedLink>
-      </div>
-    )}
+        <div className="md:hidden absolute top-20 flex flex-col left-0 w-full bg-white py-6 px-6 space-y-4 shadow-md transition-all duration-300 z-40">
+          <AnimatedLink to="/" onClick={closeMenu}>Home</AnimatedLink>
+          <AnimatedLink to="/about-us" onClick={closeMenu}>About Us</AnimatedLink>
+          <AnimatedLink to="/products" onClick={closeMenu}>Products</AnimatedLink>
+          <AnimatedLink to="/our-infra" onClick={closeMenu}>Our Infra</AnimatedLink>
+          <AnimatedLink to="/our-portfolio" onClick={closeMenu}>Portfolio</AnimatedLink>
+          <AnimatedLink to="/contact-us" onClick={closeMenu}>Contact Us</AnimatedLink>
+        </div>
+      )}
     </nav>
   );
 };

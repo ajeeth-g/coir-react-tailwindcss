@@ -37,14 +37,14 @@ export const images = {
   "hero3.jpg": hero3,
   
   // Product main images
-  "CoconutFiber_r01.png": CoconutFiber_r01,
-  "TwistedFiber_r02.png": TwistedFiber_r02,
-  "CocoChips_r05.png": CocoChips_r05,
-  "CoirPeat_r03.png": CoirPeat_r03,
-  "CocoGrowBag_r04.png": CocoGrowBag_r04,
-  "Nursery_r06.png": Nursery_r06,
-  "RubberisedCoir_r09.png": RubberisedCoir_r09,
-  "GardenArticles_r07.jpg": GardenArticles_r07,
+  "CoconutFiber_r01.jpg": CoconutFiber_r01,
+  "TwistedFiber_r02.jpg": TwistedFiber_r02,
+  "CocoChips_r05.jpg": CocoChips_r05,
+  "CoirPeat_r03.jpg": CoirPeat_r03,
+  "CocoGrowBag_r04.jpg": CocoGrowBag_r04,
+  "Nursery_r06.jpg": Nursery_r06,
+  "RubberisedCoir_r09.jpg": RubberisedCoir_r09,
+  "GardenArticles_r07.png": GardenArticles_r07,
   "GardenArticles_1.jpg": GardenArticles_1,
   "GardenArticles_2.jpg": GardenArticles_2,
   

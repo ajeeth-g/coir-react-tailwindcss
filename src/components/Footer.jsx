@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
@@ -22,10 +23,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-orange-400">Home</a></li>
-            <li><a href="#" className="hover:text-orange-400">About Us</a></li>
-            <li><a href="#" className="hover:text-orange-400">Services</a></li>
-            <li><a href="#" className="hover:text-orange-400">Contact</a></li>
+            <li><Link to="/" className="hover:text-orange-400">Home</Link></li>
+            <li><Link to="/about-us" className="hover:text-orange-400">About Us</Link></li>
+            <li><Link to="/products" className="hover:text-orange-400">Products</Link></li>
+            <li><Link to="/contact-us" className="hover:text-orange-400">Contact</Link></li>
           </ul>
         </div>
 
