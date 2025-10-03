@@ -28,14 +28,14 @@ const OurProductSection = () => {
   };
 
   return (
-    <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section className="">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-center sm:text-left mb-8 sm:mb-10">
-        <h2 className="text-orange-600 font-bold text-2xl sm:text-3xl lg:text-4xl">
+      <div className="bg-cornsilk flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6 text-center sm:text-left mb-6 sm:mb-10 w-full max-w-full">
+        <h2 className="order-1 text-orange-600 font-bold text-2xl sm:text-3xl lg:text-4xl break-words whitespace-normal max-w-full">
           Our Product Categories
         </h2>
         <Link
-          className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition duration-300 bg-orange-600 hover:bg-orange-50 hover:text-orange-600 text-sm sm:text-base"
+          className="order-2 inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition duration-300 bg-orange-600 hover:bg-orange-50 hover:text-orange-600 text-sm sm:text-base w-full sm:w-auto justify-center max-w-full break-words whitespace-normal"
           to="/products"
         >
           View All Product Categories
@@ -43,19 +43,19 @@ const OurProductSection = () => {
       </div>
 
       {/* Scroll Controls */}
-      <div className="relative">
+      <div className="relative sm:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Scroll container */}
         <div
           ref={scrollRef}
-          className="flex gap-3 sm:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory scrollbar-custom pb-4"
+          className="relative z-0 mt-4 flex gap-3 sm:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory scrollbar-custom"
         >
           {products.map((p) => (
             <div
               key={p.id}
-              className="flex-shrink-0 snap-start"
+              className="flex-shrink-0 snap-start basis-full max-w-full"
               style={{
-                width: "calc(100vw - 2rem)",
-                minWidth: "280px",
+                width: "100%",
+                minWidth: "240px",
                 maxWidth: "320px",
               }}
             >

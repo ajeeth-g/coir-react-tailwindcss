@@ -20,7 +20,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="mt-20 flex flex-col-reverse items-center md:flex-row gap-2 w-full h-[80vh] px-4 py-6">
+    <section className="mt-16 sm:mt-20 flex flex-col-reverse items-center md:flex-row gap-4 w-full px-4 py-6">
       {/* Left: Text Content */}
       <div className="w-full md:w-1/3">
         <h1 className="text-3xl md:text-5xl font-extrabold text-orange-800 leading-snug mb-6">
@@ -38,13 +38,13 @@ const HeroSection = () => {
       </div>
 
       {/* Right: Auto-scroll Carousel */}
-      <div className="w-full md:w-2/3 relative h-64 md:h-full rounded-3xl overflow-hidden shadow-lg">
+      <div className="w-full md:w-2/3 relative h-56 sm:h-64 md:h-full rounded-3xl overflow-hidden shadow-lg">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Slide ${index + 1}`}
-            className={`object-cover w-full h-64 md:h-full transition-opacity duration-1000 absolute top-0 left-0 ${
+            className={`object-cover w-full h-56 sm:h-64 md:h-full transition-opacity duration-1000 absolute top-0 left-0 ${
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           />

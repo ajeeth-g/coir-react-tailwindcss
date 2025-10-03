@@ -1,6 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "" });
+  const [errors, setErrors] = useState({});
+  const [status, setStatus] = useState("idle");
+
+  const validate = () => {
+    const e = {};
+    if (!form.name.trim()) e.name = "Name is required";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email)) e.email = "Valid email required";
+    if (!/^\+?[0-9\s-]{7,15}$/.test(form.phone)) e.phone = "Valid phone required";
+    if (!form.message.trim()) e.message = "Please enter a message";
+    setErrors(e);
+    return Object.keys(e).length === 0;
+  };
+
+  const onChange = (ev) => {
+    const { name, value } = ev.target;
+    setForm((p) => ({ ...p, [name]: value }));
+  };
+
+  const onSubmit = async (ev) => {
+    ev.preventDefault();
+    if (!validate()) return;
+    setStatus("submitting");
+    const phoneIntl = "919965405999";
+    const submittedAt = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
+    const separator = "————————————";
+    const messageText = `*Lumicos LLP · Website Enquiry*\n${separator}\n• *Name:* ${form.name}\n• *Email:* ${form.email}\n• *Phone:* ${form.phone}\n• *Company:* ${form.company || "-"}\n\n*Message:*\n${form.message}\n${separator}\nSubmitted: ${submittedAt} IST\nPage: Contact Page\n— Sent from lumicos.com`;
+    const waUrl = `https://wa.me/${phoneIntl}?text=${encodeURIComponent(messageText)}`;
+    try {
+      window.open(waUrl, "_blank");
+      setStatus("success");
+    } catch (_) {
+      setStatus("idle");
+    }
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
       {/* Left Section */}
@@ -47,37 +83,55 @@ const Contact = () => {
           Give your seeds the perfect environment to thrive.
         </h3>
 
-        <form className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <form className="grid grid-cols-1 sm:grid-cols-2 gap-6" onSubmit={onSubmit} noValidate>
           <input
             type="text"
+            name="name"
             placeholder="Full Name"
-            className="border-b border-gray-300 focus:border-orange-600 bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300"
+            value={form.name}
+            onChange={onChange}
+            className={`border-b bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300 ${errors.name ? "border-red-500" : "border-gray-300 focus:border-orange-600"}`}
           />
+          {errors.name && <span className="text-red-600 text-sm">{errors.name}</span>}
           <input
             type="email"
+            name="email"
             placeholder="Email Address"
-            className="border-b border-gray-300 focus:border-orange-600 bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300"
+            value={form.email}
+            onChange={onChange}
+            className={`border-b bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300 ${errors.email ? "border-red-500" : "border-gray-300 focus:border-orange-600"}`}
           />
+          {errors.email && <span className="text-red-600 text-sm">{errors.email}</span>}
           <input
             type="text"
+            name="phone"
             placeholder="Phone Number"
-            className="border-b border-gray-300 focus:border-orange-600 bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300"
+            value={form.phone}
+            onChange={onChange}
+            className={`border-b bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300 ${errors.phone ? "border-red-500" : "border-gray-300 focus:border-orange-600"}`}
           />
           <input
             type="text"
+            name="company"
             placeholder="Company Name"
+            value={form.company}
+            onChange={onChange}
             className="border-b border-gray-300 focus:border-orange-600 bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300"
           />
           <textarea
             rows="4"
+            name="message"
             placeholder="Your Message"
-            className="sm:col-span-2 border-b border-gray-300 focus:border-orange-600 bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300 resize-none"
+            value={form.message}
+            onChange={onChange}
+            className={`sm:col-span-2 border-b bg-transparent outline-none py-2 px-1 text-gray-700 transition duration-300 resize-none ${errors.message ? "border-red-500" : "border-gray-300 focus:border-orange-600"}`}
           ></textarea>
           <button
             type="submit"
-            className="sm:col-span-2 bg-orange-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-orange-700 transition duration-300"
+            disabled={status === "submitting"}
+            className="sm:col-span-2 bg-orange-600 text-white py-3 px-6 rounded-md font-semibold hover:bg-orange-700 transition duration-300 disabled:opacity-60"
           >
-            Submit
+            {status === "submitting" ? "Submitting..." : status === "success" ? "Submitted ✅" : "Submit"}
           </button>
         </form>
       </div>

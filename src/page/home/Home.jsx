@@ -8,7 +8,7 @@ import WhyUsSection from "./sections/WhyUsSection";
 
 const Home = () => {
   return (
-    <div className="flex flex-col gap-24">
+    <div className="flex flex-col gap-8 md:gap-24">
       <HeroSection />
       <AboutUsSection />
       <OurProductSection />

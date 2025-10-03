@@ -24,9 +24,9 @@ const InfraSection = () => {
   }, []);
 
   return (
-    <section className="p-8 bg-orange-100 rounded-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative h-[80vh]">
+    <section className="p-4 sm:p-8 bg-orange-100 rounded-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-center relative">
       {/* Image Section */}
-      <div className="relative h-64 md:h-full overflow-hidden rounded-xl">
+      <div className="relative h-56 sm:h-64 md:h-full overflow-hidden rounded-xl">
         {images.map((src, index) => (
           <img
             key={index}

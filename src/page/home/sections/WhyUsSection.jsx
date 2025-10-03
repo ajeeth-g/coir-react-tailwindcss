@@ -3,7 +3,7 @@ import hero3 from "../../../assets/Home_3.jpg";
 
 const WhyUsSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 px-12 mx-auto w-full">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 px-4 sm:px-12 mx-auto w-full">
       {/* Left text block - Our Vision */}
       <div className="md:col-span-4 bg-slate-700 text-white p-8 text-4xl md:text-5xl font-bold rounded-2xl flex items-center justify-center text-center">
         <span className="opacity-60">Our Vision</span>

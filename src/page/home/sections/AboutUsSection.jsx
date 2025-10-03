@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AboutUsSection = () => {
   return (
     <div className="flex flex-col items-center gap-6 text-center px-4">
-      <div className="w-full max-w-7xl h-[70vh] rounded-3xl overflow-hidden">
+      <div className="w-full max-w-7xl h-56 sm:h-72 md:h-[70vh] rounded-3xl overflow-hidden">
         <img
           src={hero3}
           alt="About Us"

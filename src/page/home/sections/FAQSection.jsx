@@ -32,7 +32,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="bg-purple-100 p-8 rounded-3xl">
+    <section className="bg-purple-100 p-4 sm:p-8 rounded-3xl">
       <div>
         <h2 className="text-3xl font-bold text-center text-orange-600 mb-10">
           Frequently Asked Questions

@@ -6,6 +6,7 @@
 
 body {
   @apply font-poppins;
+  overflow-x: hidden;
 }
 
 
@@ -33,4 +34,13 @@ body {
 .scrollbar-custom {
   scrollbar-width: thin;
   scrollbar-color: #f97316 #f0f0f0;
+}
+
+/* Utility to hide scrollbars (used in horizontal carousels) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
