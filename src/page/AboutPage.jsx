@@ -21,7 +21,7 @@ const AboutPage = () => {
               Who We Are
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Founded in 2008 as Lumicos LLP, we began as a trading firm with a
+              Founded in 2008 as SSS Global, we began as a trading firm with a
               modest turnover of USD 0.2 million. Over the years, with a strong
               commitment to quality and customer satisfaction, we have grown
               into one of India’s top 5 coir exporters, now achieving a turnover
@@ -35,7 +35,7 @@ const AboutPage = () => {
                 international buyers.
               </div>
               <div className="font-semibold mt-2 text-orange-600">
-                Lumicos LLP is now rebranded as Lumicos LLP — a name that
+                SSS Global is now rebranded as Lumicos LLP — a name that
                 reflects our forward-thinking approach and our commitment to
                 automation, sustainability, and manufacturing excellence. With
                 precision-driven processes and scalable capacity, we serve
@@ -61,8 +61,7 @@ const AboutPage = () => {
               Our Blossom
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              From our humble start in 2008 as Lumicos LLP to becoming Lumicos
-              LLP, we’ve grown into one of India’s top coir exporters, driven by
+              From our humble start in 2008 as SSS Global to becoming Lumicos LLP, we’ve grown into one of India’s top coir exporters, driven by
               precision, trust, and sustainable innovation.
             </p>
           </div>

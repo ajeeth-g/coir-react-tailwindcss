@@ -31,7 +31,7 @@ const Header = () => {
           <img
             src={Logo}
             alt="Lumicos Logo"
-            className="h-10 sm:h-16 md:h-20 w-auto object-contain"
+            className="h-24 sm:h-16 md:h-20 w-auto object-contain"
           />
         </div>
 
