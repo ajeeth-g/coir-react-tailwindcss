@@ -38,13 +38,13 @@ const HeroSection = () => {
       </div>
 
       {/* Right: Auto-scroll Carousel */}
-      <div className="w-full md:w-2/3 relative h-56 sm:h-64 md:h-full rounded-3xl overflow-hidden shadow-lg">
+      <div className="w-full md:w-2/3 relative h-56 sm:h-64 md:h-80 lg:h-[70vh] rounded-3xl overflow-hidden shadow-lg">
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`Slide ${index + 1}`}
-            className={`object-cover w-full h-56 sm:h-64 md:h-full transition-opacity duration-1000 absolute top-0 left-0 ${
+            className={`object-cover w-full h-56 sm:h-64 md:h-80 lg:h-[70vh] transition-opacity duration-1000 absolute top-0 left-0 ${
               index === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
           />

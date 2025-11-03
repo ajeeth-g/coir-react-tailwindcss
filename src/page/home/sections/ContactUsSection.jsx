@@ -67,9 +67,7 @@ const ContactUsSection = () => {
               <span>
                 {" "}
                 Head Office - 30 Sri MKK Enclave, Marapettai Street, Pollachi
-                642001, Tamil Nadu, India Factory - 139/3B , Chandirapuram
-                Pirivu,Thippampatti (PO), Pollachi - 642103. Coimbatore,Tamil
-                Nadu,India.
+                642001, Tamil Nadu, India.
               </span>
             </p>
             <p className="flex items-center gap-2">

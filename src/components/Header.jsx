@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
       <div
-        className={`px-3 sm:px-6 lg:px-12 py-2 flex justify-between items-center h-16 sm:h-20 transition-all duration-300 ${
+        className={`px-3 sm:px-6 lg:px-12 py-2 flex justify-between items-center h-20 sm:h-24 transition-all duration-300 ${
           scrolled ? "bg-cornsilk backdrop-blur-md shadow-md" : "bg-transparent"
         }`}
       >
@@ -31,7 +31,7 @@ const Header = () => {
           <img
             src={Logo}
             alt="Lumicos Logo"
-            className="h-24 sm:h-16 md:h-20 w-auto object-contain"
+            className="h-24 sm:h-32 w-auto object-contain"
           />
         </div>
 

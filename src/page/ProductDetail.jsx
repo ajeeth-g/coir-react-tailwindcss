@@ -25,23 +25,22 @@ const ProductDetail = () => {
       </section>
 
       {product.detailSections.map((sec, idx) => {
-        console.log(sec.image);
         
         switch (sec.type) {
           case "textImage":
             return (
               <div
                 key={idx}
-                className="flex flex-col md:flex-row items-start gap-4 h-80 overflow-hidden"
+                className="flex flex-col md:flex-row items-start gap-6"
               >
                 {sec.layout === "leftImage" && (
                   <img
                     src={images[sec.image]}
                     alt={sec.title}
-                    className="w-full md:w-1/2 rounded-lg object-cover"
+                    className="w-full md:w-1/2 rounded-lg object-cover h-48 sm:h-64 md:h-80"
                   />
                 )}
-                <div className="md:w-1/2">
+                <div className="md:w-1/2 space-y-3">
                   <h2 className="text-4xl font-semibold mb-3">{sec.title}</h2>
                   <p className="text-gray-800">{sec.description}</p>
                 </div>
@@ -49,7 +48,7 @@ const ProductDetail = () => {
                   <img
                     src={images[sec.image]}
                     alt={sec.title}
-                    className="w-full md:w-1/2 rounded-lg object-cover"
+                    className="w-full md:w-1/2 rounded-lg object-cover h-48 sm:h-64 md:h-80"
                   />
                 )}
               </div>
