@@ -7,7 +7,7 @@ const ProductCard = ({ title, description, image, onClick }) => (
       <img
         src={image}
         alt={title}
-        className="w-full h-40 sm:h-44 lg:h-48 object-cover transition-transform duration-300 hover:scale-110"
+        className="w-full h-40 sm:h-44 lg:h-48 object-contain transition-transform duration-300 hover:scale-110"
       />
     </div>
     <div className="flex flex-col flex-grow p-3 sm:p-4 text-center">

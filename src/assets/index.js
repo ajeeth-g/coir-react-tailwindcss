@@ -4,16 +4,17 @@ import hero2 from "./hero_2.jpg";
 import hero3 from "./hero_3.jpg";
 
 // Product main images
-import CoconutFiber_r01 from "./CoconutFiber_r01.png";
-import TwistedFiber_r02 from "./TwistedFiber_r02.png";
-import CocoChips_r05 from "./CocoChips_r05.png";
-import CoirPeat_r03 from "./CoirPeat_r03.png";
-import CocoGrowBag_r04 from "./CocoGrowBag_r04.png";
-import Nursery_r06 from "./Nursery_r06.png";
-import RubberisedCoir_r09 from "./RubberisedCoir_r09.png";
-import GardenArticles_r07 from "./GardenArticles_r07.png";
-import GardenArticles_1 from "./GardenArticles_1.jpg";
-import GardenArticles_2 from "./GardenArticles_2.jpg";
+// import CoconutFiber_r01 from "./CoconutFiber_r01.png";
+import Coconut_Fibre_New from "./Coconut_Fibre_New.jpg";
+import Twisted_Fibre_New from "./Twisted_Fibre_New.jpg";
+import Coco_Chips_New from "./Coco_Chips_New.png";
+import Coir_Peat_New from "./Coir_Peat_New.jpg";
+import Coco_Grow_Bags_New from "./Coco_Grow_Bags_New.jpeg";
+import Nursery_New from "./Nursery_New.jpeg";
+import Rubberised_Coir_New from "./Rubberised_Coir_New.jpg";
+import Garden_Articles_New from "./Garden_Articles_New.jpg";
+import Hooks_New from "./Hooks_New.jpg";
+import Basket_New from "./Basket_New.png";
 
 // Product detail images
 import CoconutFiber_2 from "./CoconutFiber_2.jpg";
@@ -21,6 +22,7 @@ import CoconutFiber_4 from "./CoconutFiber_4.jpg";
 import CoconutFiber_6 from "./CoconutFiber_6.jpg";
 import TwistedFiber_3 from "./TwistedFiber_3.jpg";
 import CocoChips_11 from "./CocoChips_11.jpg";
+import Five_kg_Block_New from "./Five_kg_Block_New.jpg";
 import CoirPeat_7 from "./CoirPeat_7.jpg";
 import CoirPeat_8 from "./CoirPeat_8.jpg";
 import CocoGrowBag_17 from "./CocoGrowBag_17.jpg";
@@ -37,16 +39,16 @@ export const images = {
   "hero3.jpg": hero3,
   
   // Product main images
-  "CoconutFiber_r01.jpg": CoconutFiber_r01,
-  "TwistedFiber_r02.jpg": TwistedFiber_r02,
-  "CocoChips_r05.jpg": CocoChips_r05,
-  "CoirPeat_r03.jpg": CoirPeat_r03,
-  "CocoGrowBag_r04.jpg": CocoGrowBag_r04,
-  "Nursery_r06.jpg": Nursery_r06,
-  "RubberisedCoir_r09.jpg": RubberisedCoir_r09,
-  "GardenArticles_r07.png": GardenArticles_r07,
-  "GardenArticles_1.jpg": GardenArticles_1,
-  "GardenArticles_2.jpg": GardenArticles_2,
+  "Coconut_Fibre_New.jpg": Coconut_Fibre_New,
+  "Twisted_Fibre_New.jpg": Twisted_Fibre_New,
+  "Coco_Chips_New.jpg": Coco_Chips_New,
+  "Coir_Peat_New.jpg": Coir_Peat_New,
+  "Coco_Grow_Bags_New.jpg": Coco_Grow_Bags_New,
+  "Nursery_New.jpg": Nursery_New,
+  "Rubberised_Coir_New.jpg": Rubberised_Coir_New,
+  "Garden_Articles_New.png": Garden_Articles_New,
+  "Hooks_New.jpg": Hooks_New,
+  "Basket_New.jpg": Basket_New,
   
   // Product detail images
   "CoconutFiber_2.jpg": CoconutFiber_2,
@@ -56,9 +58,10 @@ export const images = {
   "TwistedFiber_3.jpg": TwistedFiber_3,
   "TwistedFiber_3.png": TwistedFiber_3,
   "CocoChips_11.jpg": CocoChips_11,
+  "Five_kg_Block_New.jpg": Five_kg_Block_New,
   "CoirPeat_7.jpg": CoirPeat_7,
   "CoirPeat_8.jpg": CoirPeat_8,
-  "CoirPeat_r03.png": CoirPeat_r03,
+  "Coir_Peat_New.png": Coir_Peat_New,
   "CocoGrowBag_17.jpg": CocoGrowBag_17,
   "CocoGrowBag_18.jpg": CocoGrowBag_18,
   "Nursery_14.jpg": Nursery_14,
