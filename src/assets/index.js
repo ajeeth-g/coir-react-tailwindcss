@@ -4,9 +4,8 @@ import hero2 from "./hero_2.jpg";
 import hero3 from "./hero_3.jpg";
 
 // Product main images
-// import CoconutFiber_r01 from "./CoconutFiber_r01.png";
-import Coconut_Fibre_New from "./Coconut_Fibre_New.jpg";
-import Twisted_Fibre_New from "./Twisted_Fibre_New.jpg";
+import Coconut_Fibre_New from "./Coconut_Fibre_New.png";
+import Twisted_Fibre_New from "./Twisted_Fibre_New.png";
 import Coco_Chips_New from "./Coco_Chips_New.png";
 import Coir_Peat_New from "./Coir_Peat_New.jpg";
 import Coco_Grow_Bags_New from "./Coco_Grow_Bags_New.jpeg";

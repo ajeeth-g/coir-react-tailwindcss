@@ -1,6 +1,7 @@
 import { Rocket, ShieldCheck, Users } from "lucide-react";
 import aboutUs from "../assets/About_1.jpg";
 import Breadcrumb from "../components/Breadcrumb";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   const breadcrumbItems = [
@@ -141,12 +142,9 @@ const AboutPage = () => {
           Contact us today and explore how Lumicos LLP can help your business
           thrive.
         </p>
-        <a
-          href="/contact-us"
-          className="inline-block bg-orange-700 text-white py-3 px-6 rounded-lg font-medium hover:bg-orange-600 transition"
-        >
+           <Link to="/contact-us" className="inline-block bg-orange-700 text-white py-3 px-6 rounded-lg font-medium hover:bg-orange-600 transition">
           Contact Us
-        </a>
+        </Link>
       </section>
     </div>
   );
