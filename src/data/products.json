@@ -3,7 +3,7 @@
     "id": "Coconut Fibre",
     "title": "Coconut Fibre",
     "description": "Coconut fiber has very long history, Ancient navigators widely use these coconut fiber based ropes for their ships over long period.",
-    "image": "CoconutFiber_r01.jpg",
+    "image": "Coconut_Fibre_New.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -64,7 +64,7 @@
     "id": "Twisted Fibre",
     "title": "Twisted Fibre",
     "description": "Twisting is simply the process of combining together multiple fibres, threads or yarns in a wrapping around (twisting) motion.",
-    "image": "TwistedFiber_r02.jpg",
+    "image": "Twisted_Fibre_New.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -111,7 +111,7 @@
     "id": "Coco Chips",
     "title": "Coco Chips",
     "description": "Coconut chips is rich in dietary fiber and minerals. It contains iron, magnesium, copper, manganese and pantothenic acid.",
-    "image": "CocoChips_r05.jpg",
+    "image": "Coco_Chips_New.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -158,14 +158,14 @@
     "id": "Coir Peat",
     "title": "Coir Peat",
     "description": "Coco peat increases the porosity of the potting mix. This helps to keep the soil loose and airy helping in better root growth.",
-    "image": "CoirPeat_r03.jpg",
+    "image": "Coir_Peat_New.jpg",
     "detailSections": [
       {
         "type": "textImage",
         "layout": "leftText",
         "title": "5 kg",
         "description": "Coir peat, also known as coco peat or coir pith, is a byproduct of coconut husk processing, composed of the fine, spongy particles that remain after the fibre is extracted. The 5 kg coir peat block is a compressed, dehydrated form of this material, widely used as a soil amendment and growing medium. When rehydrated, it expands up to 70–80 litres in volume, offering excellent water retention, aeration, and root support. Naturally pH balanced and free from harmful pathogens, it serves as a sustainable alternative to peat moss in horticulture, hydroponics, and potting mixes. The 5 kg block is available in low EC (washed) and high EC (unwashed) variants, depending on crop and regional requirements.",
-        "image": "CoirPeat_r03.png"
+        "image": "Five_kg_Block_New.jpg"
       },
       {
         "type": "textImage",
@@ -219,7 +219,7 @@
     "id": "Coco Grow Bags",
     "title": "Coco Grow Bags",
     "description": "Grow bags are very useful growing in garden. It provides a perfect growing environment for a wide range of vegetables, fruits, flowers.",
-    "image": "CocoGrowBag_r04.jpg",
+    "image": "Coco_Grow_Bags_New.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -273,7 +273,7 @@
     "id": "Nursery",
     "title": "Nursery",
     "description": "Nurseries may supply plants for gardens, for agriculture, for forestry and for conservation biology.",
-    "image": "Nursery_r06.jpg",
+    "image": "Nursery_New.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -334,7 +334,7 @@
     "id": "Rubberised Coir",
     "title": "Rubberised Coir",
     "description": "Pioneers in production and supply of Rubberised Coir use clean natural coir fibres and natural rubber latex.",
-    "image": "RubberisedCoir_r09.jpg",
+    "image": "Rubberised_Coir_New.jpg",
     "detailSections": [
       {
         "type": "textImage",
@@ -381,21 +381,21 @@
     "id": "Garden Articles",
     "title": "Garden Articles",
     "description": "From poles to plant pots to hanging baskets, coir makes just about every accessory that is essential for modern day gardening.",
-    "image": "GardenArticles_r07.png",
+    "image": "Garden_Articles_New.png",
     "detailSections": [
       {
         "type": "textImage",
         "layout": "leftText",
         "title": "Hooks",
         "description": "Hooks for baskets are sturdy, corrosion-resistant fittings designed to securely hold and suspend coir or metal hanging baskets. Typically made from galvanized iron, stainless steel, or powder-coated steel, these hooks provide strength, durability, and protection against outdoor weather conditions. They come in various shapes such as 'S-hooks', ceiling hooks, and wall-mounted brackets to suit different installation needs. Widely used in gardening, landscaping, and interior décor, basket hooks allow safe suspension of flowering plants, decorative arrangements, and grow baskets, ensuring both functional support and aesthetic appeal. Their ease of use, reliability, and long service life make them an essential accessory in the horticulture and home décor industry.",
-        "image": "GardenArticles_1.jpg"
+        "image": "Hooks_New.jpg"
       },
       {
         "type": "textImage",
         "layout": "leftImage",
         "title": "Basket",
         "description": "Baskets are versatile containers traditionally crafted from materials such as coir fibre, metal, bamboo, or other natural and durable resources. In the coir industry, baskets are often produced by combining coir liners with metal frames, creating sturdy yet breathable holders ideal for gardening and decorative purposes. Coir-lined baskets retain moisture for plant roots while ensuring proper aeration, making them particularly popular for hanging plants, balcony gardens, and landscaping. Metal-framed baskets provide structural strength, while the coir lining adds a natural, eco-friendly touch. Beyond horticulture, baskets serve a wide range of applications, from storage and home décor to gifting and retail display, valued for their durability, sustainability, and timeless aesthetic appeal.",
-        "image": "GardenArticles_2.jpg"
+        "image": "Basket_New.jpg"
       },
       {
         "type": "specsUses",
