@@ -34,22 +34,26 @@ const ProductDetail = () => {
                 className="flex flex-col md:flex-row items-start gap-6"
               >
                 {sec.layout === "leftImage" && (
-                  <img
-                    src={images[sec.image]}
-                    alt={sec.title}
-                    className="w-full md:w-1/2 rounded-lg object-cover h-48 sm:h-64 md:h-80"
-                  />
+                  <div className="w-full md:w-1/2 flex items-center justify-center rounded-2xl">
+                    <img
+                      src={images[sec.image]}
+                      alt={sec.title}
+                      className="w-full rounded-2xl object-fit max-h-96"
+                    />
+                  </div>
                 )}
                 <div className="md:w-1/2 space-y-3">
                   <h2 className="text-4xl font-semibold mb-3">{sec.title}</h2>
                   <p className="text-gray-800">{sec.description}</p>
                 </div>
                 {sec.layout === "leftText" && (
-                  <img
-                    src={images[sec.image]}
-                    alt={sec.title}
-                    className="w-full md:w-1/2 rounded-lg object-cover h-48 sm:h-64 md:h-80"
-                  />
+                  <div className="w-full md:w-1/2 flex items-center justify-center rounded-2xl">
+                    <img
+                      src={images[sec.image]}
+                      alt={sec.title}
+                      className="w-full rounded-2xl object-fit max-h-96"
+                    />
+                  </div>
                 )}
               </div>
             );
