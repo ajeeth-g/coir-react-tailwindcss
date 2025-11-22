@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import AnimatedLink from "./AnimatedLink";
 import Logo from "../assets/Logo.png";
@@ -28,11 +28,13 @@ const Header = () => {
       >
         {/* Logo */}
         <div className="flex items-center h-full">
-          <img
-            src={Logo}
-            alt="Lumicos Logo"
-            className="h-24 sm:h-32 w-auto object-contain"
-          />
+          <Link to="/">
+            <img
+              src={Logo}
+              alt="Lumicos Logo"
+              className="h-24 sm:h-32 w-auto object-contain"
+            />
+          </Link>
         </div>
 
         {/* Hamburger Icon */}

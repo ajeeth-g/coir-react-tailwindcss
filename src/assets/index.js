@@ -13,7 +13,7 @@ import Nursery_New from "./Nursery_New.jpeg";
 import Rubberised_Coir_New from "./Rubberised_Coir_New.jpg";
 import Garden_Articles_New from "./Garden_Articles_New.jpg";
 import Hooks_New from "./Hooks_New.jpg";
-import Basket_New from "./Basket_New.png";
+import Basket_New from "./Basket_New.jpg";
 
 // Product detail images
 import CoconutFiber_2 from "./CoconutFiber_2.jpg";
