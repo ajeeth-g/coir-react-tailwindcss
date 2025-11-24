@@ -16,8 +16,7 @@ const AboutUsSection = () => {
         turnover of USD 0.2 million. Over the years, with a strong commitment to
         quality and customer satisfaction, we have grown into one of India's top
         5 coir exporters, now achieving a turnover of over USD 7 million and a
-        solid footprint in global horticulture and garden markets. Lumicos LLP is
-        now rebranded as Lumicos LLP
+        solid footprint in global horticulture and garden markets. SSS Global is now rebranded as Lumicos LLP
       </p>
 
       <Link to="/about-us" className="inline-flex items-center gap-2 px-5 py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition-colors duration-200 bg-orange-600 hover:bg-cornsilk hover:text-orange-600">
