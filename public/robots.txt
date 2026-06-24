@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lumicos.com/sitemap.xml
+
+# Block non-content paths
+Disallow: /api/

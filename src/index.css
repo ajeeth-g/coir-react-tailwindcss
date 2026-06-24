@@ -1,46 +1,102 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-poppins;
-  overflow-x: hidden;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply font-sans text-gray-800 bg-beige-100 antialiased;
+    overflow-x: hidden;
+  }
+
+  .dark body,
+  body.dark,
+  .dark {
+    @apply text-gray-100;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
 }
 
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
 
-/* Custom scrollbar styling */
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .glass-card {
+    @apply bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border border-white/40 dark:border-gray-700/40 shadow-glass;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-full
+      hover:bg-primary-600 transition-all duration-300 shadow-premium hover:shadow-premium-lg hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full
+      border-2 border-white/40 hover:bg-white/20 transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary text-primary font-semibold rounded-full
+      hover:bg-primary hover:text-white transition-all duration-300 dark:border-primary-300 dark:text-primary-300;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-semibold rounded-full
+      hover:bg-accent-500 transition-all duration-300 shadow-gold hover:-translate-y-0.5;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary-400 to-secondary;
+  }
+
+  .skeleton {
+    @apply animate-pulse bg-gradient-to-r from-gray-200 via-gray-100 to-gray-200 dark:from-gray-700 dark:via-gray-600 dark:to-gray-700;
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+}
+
 .scrollbar-custom::-webkit-scrollbar {
-  height: 1px; /* Horizontal scrollbar height */
+  height: 4px;
+  width: 4px;
 }
 
 .scrollbar-custom::-webkit-scrollbar-track {
-  background: #f0f0f0; /* Light gray track */
-  border-radius: 4px;
+  @apply bg-beige-200 rounded;
 }
 
 .scrollbar-custom::-webkit-scrollbar-thumb {
-  background-color: #f97316; /* Tailwind orange-500 */
-  border-radius: 4px;
-  border: 2px solid #f0f0f0; /* Creates padding effect */
+  @apply bg-primary/40 rounded hover:bg-primary/60;
 }
 
-.scrollbar-custom::-webkit-scrollbar-thumb:hover {
-  background-color: #ea580c; /* Darker orange on hover */
-}
-
-/* Firefox scrollbar */
-.scrollbar-custom {
-  scrollbar-width: thin;
-  scrollbar-color: #f97316 #f0f0f0;
-}
-
-/* Utility to hide scrollbars (used in horizontal carousels) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

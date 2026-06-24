@@ -1,95 +1,57 @@
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+import SectionHeading from "../../../components/ui/SectionHeading";
 import ProductCard from "../../../components/ProductCard";
-import products from "../../../data/products.json";
+import { MotionSection } from "../../../components/ui/Motion";
+import { showcaseProducts } from "../../../data/productCatalog";
+import { getProductPath } from "../../../seo/productSlugs";
 import { images } from "../../../assets";
 
 const OurProductSection = () => {
   const navigate = useNavigate();
-  const scrollRef = useRef(null);
 
-  const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: -scrollRef.current.clientWidth / 2,
-        behavior: "smooth",
-      });
-    }
-  };
-
-  const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({
-        left: scrollRef.current.clientWidth / 2,
-        behavior: "smooth",
-      });
-    }
+  const handleInquiry = (title) => {
+    const msg = encodeURIComponent(
+      `Hello Lumicos, I would like to inquire about ${title}.`
+    );
+    window.open(`https://wa.me/919965405999?text=${msg}`, "_blank");
   };
 
   return (
-    <section className="">
-      {/* Header */}
-      <div className="bg-cornsilk flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-6 text-center sm:text-left mb-6 sm:mb-10 w-full max-w-full">
-        <h2 className="order-1 text-orange-600 font-bold text-2xl sm:text-3xl lg:text-4xl break-words whitespace-normal max-w-full">
-          Our Product Categories
-        </h2>
-        <Link
-          className="order-2 inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-3 border-2 border-orange-600 text-white rounded-full font-semibold transition duration-300 bg-orange-600 hover:bg-orange-50 hover:text-orange-600 text-sm sm:text-base w-full sm:w-auto justify-center max-w-full break-words whitespace-normal"
-          to="/products"
-        >
-          View All Product Categories
-        </Link>
-      </div>
-
-      {/* Scroll Controls */}
-      <div className="relative sm:py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        {/* Scroll container */}
-        <div
-          ref={scrollRef}
-          className="relative z-0 mt-4 flex gap-3 sm:gap-4 lg:gap-6 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory scrollbar-custom"
-        >
-          {products.map((p) => (
-            <div
-              key={p.id}
-              className="flex-shrink-0 snap-start basis-full max-w-full"
-              style={{
-                width: "100%",
-                minWidth: "240px",
-                maxWidth: "320px",
-              }}
-            >
-              <div className="w-full sm:w-auto sm:min-w-[280px] sm:max-w-[320px] lg:min-w-[300px] lg:max-w-[350px]">
-                <ProductCard
-                  title={p.title}
-                  description={p.description}
-                  image={images[p.image]}
-                  onClick={() => navigate(`/products/${p.id}`)}
-                />
-              </div>
-            </div>
-          ))}
+    <MotionSection
+      id="products"
+      className="section-padding bg-beige-100 dark:bg-gray-900"
+    >
+      <div className="section-container">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-12">
+          <SectionHeading
+            eyebrow="Product Showcase"
+            title="Export-Grade Coir Product Range"
+            subtitle="Premium coco peat, fiber, grow bags, and customized solutions manufactured to international specifications for wholesale buyers."
+            align="left"
+          />
+          <Link to="/products" className="btn-primary shrink-0 self-start lg:self-auto">
+            View All Products
+            <ArrowRight size={18} />
+          </Link>
         </div>
 
-        {/* Left Button */}
-        <button
-          onClick={scrollLeft}
-          className="hidden lg:flex absolute top-1/2 left-0 -translate-y-1/2 bg-white rounded-full shadow-md p-3 text-orange-600 hover:bg-orange-50 transition z-10"
-          aria-label="Scroll left"
-        >
-          <ChevronLeft size={24} />
-        </button>
-
-        {/* Right Button */}
-        <button
-          onClick={scrollRight}
-          className="hidden lg:flex absolute top-1/2 right-0 -translate-y-1/2 bg-white rounded-full shadow-md p-3 text-orange-600 hover:bg-orange-50 transition z-10"
-          aria-label="Scroll right"
-        >
-          <ChevronRight size={24} />
-        </button>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {showcaseProducts.map((product, index) => (
+            <ProductCard
+              key={product.id}
+              index={index}
+              title={product.title}
+              description={product.description}
+              specs={product.specs}
+              image={images[product.image]}
+              onClick={() => navigate(getProductPath(product.id))}
+              onInquiry={() => handleInquiry(product.title)}
+            />
+          ))}
+        </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };
 

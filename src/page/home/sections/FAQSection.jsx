@@ -1,68 +1,69 @@
-import React, { useState } from "react";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
+import { Plus, Minus } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import SectionHeading from "../../../components/ui/SectionHeading";
+import { MotionSection } from "../../../components/ui/Motion";
 
-const faqData = [
-  {
-    question: "What types of coir products do you offer?",
-    answer:
-      "We manufacture and export a wide range of coir products including coir fibre (mattress, bristle, twisted, mixed), coir peat blocks (5kg, 650g, bulk bags), coco chips, grow bags, nursery products (coins, pellets, cubes), rubberised coir, coir liners, and baskets.",
-  },
-  {
-    question: "Which countries do you export to?",
-    answer:
-      "Our products are exported to over 10+ countries including China, Spain, Poland, Netherlands, Australia, South America, USA, Korea, and Germany, serving the global horticulture, agriculture, and industrial markets.",
-  },
-  {
-    question: "Do you provide customization for bulk orders?",
-    answer:
-      "Yes. We specialize in tailored B2B solutions, offering product customization in size, packaging, and specifications to meet the unique needs of each market.",
-  },
-  {
-    question: "How do you ensure the quality of your coir products?",
-    answer:
-      "Every product goes through strict quality checks — from raw material selection to processing and final packaging. With ISO & international certifications, modern automation, and skilled teams, we guarantee consistency, durability, and eco-friendly excellence.",
-  },
-];
+import { faqData } from "../../../seo/faqData";
 
 const FAQSection = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFAQ = (index) => {
-    setOpenIndex(index === openIndex ? null : index);
-  };
+  const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="bg-purple-100 p-4 sm:p-8 rounded-3xl">
-      <div>
-        <h2 className="text-3xl font-bold text-center text-orange-600 mb-10">
-          Frequently Asked Questions
-        </h2>
+    <MotionSection id="faq" className="section-padding bg-white dark:bg-gray-950">
+      <div className="section-container max-w-3xl">
+        <SectionHeading
+          eyebrow="FAQ"
+          title="Frequently Asked Questions"
+          subtitle="Quick answers for international buyers considering Lumicos as their coir export partner."
+        />
 
-        <div className="space-y-4">
-          {faqData.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-md p-6 cursor-pointer transition duration-300 hover:shadow-lg"
-              onClick={() => toggleFAQ(index)}
-            >
-              <div className="flex justify-between items-center">
-                <h3 className="text-lg font-medium text-gray-800">
-                  {faq.question}
-                </h3>
-                {openIndex === index ? (
-                  <ChevronUp className="text-orange-600" />
-                ) : (
-                  <ChevronDown className="text-orange-600" />
-                )}
+        <div className="space-y-3 -mt-4">
+          {faqData.map((faq, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <div
+                key={index}
+                className={`rounded-xl border transition-colors ${
+                  isOpen
+                    ? "border-primary/30 bg-beige-50 dark:bg-gray-900"
+                    : "border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950"
+                }`}
+              >
+                <button
+                  className="w-full flex justify-between items-center p-5 text-left"
+                  onClick={() => setOpenIndex(isOpen ? null : index)}
+                  aria-expanded={isOpen}
+                >
+                  <h3 className="font-semibold text-gray-900 dark:text-white pr-4">
+                    {faq.question}
+                  </h3>
+                  <span className="shrink-0 w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                    {isOpen ? <Minus size={16} /> : <Plus size={16} />}
+                  </span>
+                </button>
+
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <p className="px-5 pb-5 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
-              {openIndex === index && (
-                <p className="mt-4 text-gray-600 text-sm">{faq.answer}</p>
-              )}
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 };
 
