@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import SectionHeading from "../../../components/ui/SectionHeading";
-import { MotionSection } from "../../../components/ui/Motion";
+import SectionHeading from "./ui/SectionHeading";
+import { MotionSection } from "./ui/Motion";
 
 const SEOContentSection = () => (
   <MotionSection
     id="coir-manufacturer-india"
-    className="section-padding bg-beige-100 dark:bg-gray-900/50"
+    className="section-padding bg-beige-100 dark:bg-gray-900/50 rounded-2xl sm:rounded-3xl"
     aria-labelledby="seo-content-heading"
   >
     <div className="section-container max-w-4xl">

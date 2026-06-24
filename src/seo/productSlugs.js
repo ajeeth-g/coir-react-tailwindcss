@@ -8,7 +8,6 @@ export const SLUG_TO_PRODUCT_ID = {
   "nursery-coir-products": "Nursery",
   "rubberised-coir": "Rubberised Coir",
   "coir-garden-articles": "Garden Articles",
-  "coir-mats": "Garden Articles",
 };
 
 export const PRODUCT_ID_TO_SLUG = Object.fromEntries(

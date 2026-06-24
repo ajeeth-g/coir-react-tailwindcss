@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import SectionHeading from "../../../components/ui/SectionHeading";
 import ProductCard from "../../../components/ProductCard";
 import { MotionSection } from "../../../components/ui/Motion";
-import { showcaseProducts } from "../../../data/homeData";
+import { showcaseProducts } from "../../../data/productCatalog";
 import { getProductPath } from "../../../seo/productSlugs";
 import { images } from "../../../assets";
 
@@ -45,11 +45,7 @@ const OurProductSection = () => {
               description={product.description}
               specs={product.specs}
               image={images[product.image]}
-              onClick={() =>
-                product.isCustom
-                  ? navigate("/contact-us")
-                  : navigate(getProductPath(product.id))
-              }
+              onClick={() => navigate(getProductPath(product.id))}
               onInquiry={() => handleInquiry(product.title)}
             />
           ))}

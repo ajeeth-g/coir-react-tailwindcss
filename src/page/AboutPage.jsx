@@ -19,6 +19,7 @@ import SectionHeading from "../components/ui/SectionHeading";
 import { MotionSection, staggerContainer, staggerItem } from "../components/ui/Motion";
 import ImageWithSkeleton from "../components/ui/ImageWithSkeleton";
 import PageCTA from "../components/ui/PageCTA";
+import SEOContentSection from "../components/SEOContentSection";
 import SEOHead from "../components/seo/SEOHead";
 import { whyChooseUs } from "../data/homeData";
 import { getPageMeta } from "../seo/pageMeta";
@@ -271,6 +272,8 @@ const AboutPage = () => {
           </Link>
         </div>
       </MotionSection>
+
+      <SEOContentSection />
 
       <PageCTA />
     </div>

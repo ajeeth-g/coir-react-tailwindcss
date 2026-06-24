@@ -215,55 +215,5 @@ export const certifications = [
   },
 ];
 
-export const showcaseProducts = [
-  {
-    id: "Coir Peat",
-    title: "Coir Pith Blocks",
-    specs: "5kg · 650kg · Bulk Bags",
-    description: "Compressed coco peat blocks with excellent water retention and aeration.",
-    image: "Coir_Peat_New.jpg",
-  },
-  {
-    id: "Coco Grow Bags",
-    title: "Coco Peat Grow Bags",
-    specs: "Open Top · Naked · Custom Mix",
-    description: "Ready-to-use greenhouse grow bags for high-yield crop cultivation.",
-    image: "Coco_Grow_Bags_New.jpg",
-  },
-  {
-    id: "Coconut Fibre",
-    title: "Coir Fiber",
-    specs: "Bristle · Mattress · Mixed",
-    description: "Premium natural coir fiber for industrial and horticultural applications.",
-    image: "Coconut_Fibre_New.jpg",
-  },
-  {
-    id: "Twisted Fibre",
-    title: "Coir Rope",
-    specs: "Twisted · Curled · Coils",
-    description: "High-tensile twisted coir fiber for ropes, nets, and geotextiles.",
-    image: "Twisted_Fibre_New.jpg",
-  },
-  {
-    id: "Rubberised Coir",
-    title: "Coir Mats",
-    specs: "Rubberised Sheets · Pads",
-    description: "Durable coir matting and rubberised sheets for flooring and erosion control.",
-    image: "Rubberised_Coir_New.jpg",
-  },
-  {
-    id: "Coco Chips",
-    title: "Coir Logs",
-    specs: "Chips · Rolls · Erosion Control",
-    description: "Coir logs and chips for landscaping, slope stabilization, and hydroponics.",
-    image: "Coco_Chips_New.jpg",
-  },
-  {
-    id: "custom",
-    title: "Customized Products",
-    specs: "OEM · Private Label",
-    description: "Bespoke coir solutions tailored to your specifications and market needs.",
-    image: "Garden_Articles_New.png",
-    isCustom: true,
-  },
-];
+// Product cards — synced with products.json via productCatalog
+export { showcaseProducts, allCatalogProducts, getProductById } from "./productCatalog";

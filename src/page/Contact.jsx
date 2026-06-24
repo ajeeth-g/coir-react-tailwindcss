@@ -21,7 +21,7 @@ import {
   breadcrumbSchema,
 } from "../seo/schemas";
 import { NAP, SITE } from "../seo/siteConfig";
-import { showcaseProducts } from "../data/homeData";
+import products from "../data/products.json";
 import contactHero from "../assets/Home_2.jpg";
 
 const pageMeta = getPageMeta("contact");
@@ -315,12 +315,12 @@ const Contact = () => {
                     className={inputClass()}
                   >
                     <option value="">Select a product</option>
-                    {showcaseProducts.map((p) => (
+                    {products.map((p) => (
                       <option key={p.id} value={p.title}>
                         {p.title}
                       </option>
                     ))}
-                    <option value="Custom / Other">Custom / Other</option>
+                    <option value="Custom / Other">Customized Products</option>
                   </select>
                 </div>
 

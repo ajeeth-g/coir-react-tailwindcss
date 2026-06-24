@@ -6,7 +6,7 @@ import AnimatedLink from "./AnimatedLink";
 import BrandLogo from "./BrandLogo";
 import { useTheme } from "../context/ThemeContext";
 import { getProductPath } from "../seo/productSlugs";
-import products from "../data/products.json";
+import { allCatalogProducts } from "../data/productCatalog";
 import { images } from "../assets";
 
 const navLinks = [
@@ -122,7 +122,7 @@ const Header = () => {
                     className="absolute top-full right-0 pt-3 z-50 w-[min(36rem,calc(100vw-2rem))]"
                   >
                     <div className="bg-white dark:bg-gray-900 rounded-2xl p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 shadow-premium-lg border border-gray-100 dark:border-gray-800 max-h-[min(70vh,520px)] overflow-y-auto">
-                      {products.slice(0, 6).map((p) => (
+                      {allCatalogProducts.map((p) => (
                         <Link
                           key={p.id}
                           to={getProductPath(p.id)}
@@ -239,7 +239,7 @@ const Header = () => {
 
               {mobileProductsOpen && (
                 <div className="pl-2 sm:pl-4 py-2 space-y-1 max-h-48 overflow-y-auto">
-                  {products.map((p) => (
+                  {allCatalogProducts.map((p) => (
                     <Link
                       key={p.id}
                       to={getProductPath(p.id)}

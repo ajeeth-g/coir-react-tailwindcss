@@ -9,6 +9,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import BrandLogo from "./BrandLogo";
+import { allCatalogProducts } from "../data/productCatalog";
+import { getProductPath } from "../seo/productSlugs";
 
 const Footer = () => {
   return (
@@ -78,21 +80,21 @@ const Footer = () => {
               Products
             </h3>
             <ul className="space-y-3 text-sm text-white/70">
-              {[
-                { to: "/products/coir-pith-blocks", label: "Coir Pith Blocks" },
-                { to: "/products/coco-peat-grow-bags", label: "Coco Grow Bags" },
-                { to: "/products/coir-fiber", label: "Coir Fiber" },
-                { to: "/products/coir-rope", label: "Coir Rope" },
-                { to: "/products/coco-chips", label: "Coco Chips" },
-                { to: "/products/nursery-coir-products", label: "Nursery Products" },
-                { to: "/contact-us", label: "Custom Solutions" },
-              ].map((link) => (
-                <li key={link.label}>
-                  <Link to={link.to} className="hover:text-accent transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              {allCatalogProducts.map(({ id, title }) => {
+                const slugPath = getProductPath(id);
+                return (
+                  <li key={id}>
+                    <Link to={slugPath} className="hover:text-accent transition-colors">
+                      {title}
+                    </Link>
+                  </li>
+                );
+              })}
+              <li>
+                <Link to="/contact-us" className="hover:text-accent transition-colors">
+                  Custom Solutions
+                </Link>
+              </li>
             </ul>
           </div>
 

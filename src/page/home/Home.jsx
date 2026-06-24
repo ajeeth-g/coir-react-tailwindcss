@@ -8,7 +8,6 @@ import IndustriesSection from "./sections/IndustriesSection";
 import ManufacturingProcessSection from "./sections/ManufacturingProcessSection";
 import OurProductSection from "./sections/OurProductSection";
 import QualityAssuranceSection from "./sections/QualityAssuranceSection";
-import SEOContentSection from "./sections/SEOContentSection";
 import TestimonialsSection from "./sections/TestimonialsSection";
 import WhyUsSection from "./sections/WhyUsSection";
 import SEOHead from "../../components/seo/SEOHead";
@@ -41,7 +40,6 @@ const Home = () => (
       <HeroSection />
       <AboutUsSection />
       <OurProductSection />
-      <SEOContentSection />
       <IndustriesSection />
       <ManufacturingProcessSection />
       <QualityAssuranceSection />

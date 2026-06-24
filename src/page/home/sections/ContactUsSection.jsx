@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MessageCircle, Phone, Mail, MapPin, Send } from "lucide-react";
 import { MotionSection } from "../../../components/ui/Motion";
 import SectionHeading from "../../../components/ui/SectionHeading";
-import { showcaseProducts } from "../../../data/homeData";
+import products from "../../../data/products.json";
 
 const ContactUsSection = () => {
   const [form, setForm] = useState({
@@ -217,11 +217,12 @@ const ContactUsSection = () => {
                   className={inputClass()}
                 >
                   <option value="">Select a product</option>
-                  {showcaseProducts.map((p) => (
+                  {products.map((p) => (
                     <option key={p.id} value={p.title}>
                       {p.title}
                     </option>
                   ))}
+                  <option value="Customized Products">Customized Products</option>
                 </select>
               </div>
 

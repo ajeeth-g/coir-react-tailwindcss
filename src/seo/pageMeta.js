@@ -81,32 +81,32 @@ export const PAGE_META = {
 
 export const PRODUCT_META = {
   "coir-fiber": {
-    title: "Coir Fiber Exporter | Coconut Fibre Supplier",
+    title: "Coconut Fibre Exporter | Coir Fiber India",
     description:
-      "Export-grade coir fiber — mattress, bristle & mixed fibre from Lumicos India. Bulk bales for bedding, geotextiles & industrial use. Request wholesale quote.",
+      "Export-grade coconut fibre — mattress, bristle and mixed fibre from Lumicos India. Bulk bales for bedding, geotextiles and industrial use.",
     keywords:
-      "coir fiber exporter, coconut fibre supplier, coir fiber manufacturer India, mattress coir fibre",
+      "coconut fibre exporter, coir fiber manufacturer India, mattress coir fibre, bristle fibre",
   },
   "coir-rope": {
-    title: "Twisted Coir Fibre & Coir Rope Exporter India",
+    title: "Twisted Fibre Exporter | Coir Rope India",
     description:
-      "Twisted coir fibre coils (20–100 kg) for mattresses, rubberized coir & ropes. Leading coir rope supplier from Pollachi. Export MOQ & specs available.",
+      "Twisted coir fibre in coils for ropes, nets, geotextiles and mattress manufacturing. Export from Lumicos LLP, Pollachi, India.",
     keywords:
-      "coir rope exporter, twisted coir fibre, coir rope manufacturer India, coir fibre coils",
+      "twisted fibre exporter, coir rope manufacturer India, coir fibre coils",
   },
   "coir-pith-blocks": {
-    title: "Coir Pith Block Manufacturer | Coco Peat Supplier",
+    title: "Coir Peat Exporter | Coco Peat Blocks India",
     description:
-      "Coir pith blocks & coco peat — 5 kg blocks, 650 kg bales & bulk bags. Low EC washed grades for horticulture. Top coco peat exporter from India.",
+      "Coir peat blocks — 5 kg, 650 kg bales and bulk bags. Coco peat exporter from India for horticulture and hydroponics.",
     keywords:
-      "coir pith block manufacturer, coco peat supplier, coco peat exporter, coir peat blocks India",
+      "coir peat exporter, coco peat blocks, coir pith manufacturer India",
   },
   "coco-peat-grow-bags": {
-    title: "Coir Grow Bags Supplier | Coco Peat Grow Bags",
+    title: "Coco Grow Bags Exporter | Greenhouse Grow Bags",
     description:
-      "Coco peat grow bags for greenhouse & hydroponic farming. Open-top & naked grow bag formats. Custom media ratios. Export from Lumicos LLP India.",
+      "Coco grow bags — open top and naked formats for greenhouse and hydroponic farming. Export from Lumicos LLP India.",
     keywords:
-      "coir grow bags supplier, coco peat grow bags, greenhouse grow bags exporter, hydroponic coir bags",
+      "coco grow bags exporter, coir grow bags supplier, greenhouse grow bags India",
   },
   "coco-chips": {
     title: "Coco Chips Exporter | Coconut Coir Chips Supplier",
@@ -123,11 +123,11 @@ export const PRODUCT_META = {
       "coir nursery products, coco peat coins, coir pellets exporter, seed germination coir",
   },
   "rubberised-coir": {
-    title: "Rubberised Coir Sheets | Mattress Coir Exporter",
+    title: "Rubberised Coir Exporter | Coir Sheets India",
     description:
-      "Rubberised coir sheets bonded with natural latex for mattresses, cushions & upholstery. Export-grade quality from Lumicos LLP, Pollachi, India.",
+      "Rubberised coir sheets bonded with natural latex for mattresses, cushions, and upholstery. Export-grade quality from Lumicos LLP, Pollachi, India.",
     keywords:
-      "rubberised coir exporter, coir mattress material, latex bonded coir India",
+      "rubberised coir exporter, coir mattress material, latex bonded coir India, coir sheets supplier",
   },
   "coir-garden-articles": {
     title: "Coir Garden Articles | Baskets, Mats & Hooks",

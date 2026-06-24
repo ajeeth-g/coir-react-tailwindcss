@@ -46,6 +46,7 @@ const Products = () => {
               title={p.title}
               description={p.description}
               image={images[p.image]}
+              specs={p.cardSpecs}
               onClick={() => navigate(getProductPath(p.id))}
               index={i}
             />

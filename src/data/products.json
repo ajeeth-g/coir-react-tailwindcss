@@ -2,6 +2,9 @@
   {
     "id": "Coconut Fibre",
     "title": "Coconut Fibre",
+    "featured": true,
+    "featuredOrder": 1,
+    "cardSpecs": "Mattress · Mixed · Bristle",
     "description": "Coconut fiber has very long history, Ancient navigators widely use these coconut fiber based ropes for their ships over long period.",
     "image": "Coconut_Fibre_New.jpg",
     "detailSections": [
@@ -29,26 +32,11 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "Color",
-            "value": "Brown and Golden Yellow"
-          },
-          {
-            "label": "Moisture",
-            "value": "15% - 20%"
-          },
-          {
-            "label": "Impurity",
-            "value": "3% max"
-          },
-          {
-            "label": "Length",
-            "value": "5 cm - 25 cm"
-          },
-          {
-            "label": "Packing",
-            "value": "Plastic Straps"
-          }
+          { "label": "Color", "value": "Brown and Golden Yellow" },
+          { "label": "Moisture", "value": "15% - 20%" },
+          { "label": "Impurity", "value": "3% max" },
+          { "label": "Length", "value": "5 cm - 25 cm" },
+          { "label": "Packing", "value": "Plastic Straps" }
         ],
         "uses": [
           "Mattress and cushion filling.",
@@ -63,6 +51,9 @@
   {
     "id": "Twisted Fibre",
     "title": "Twisted Fibre",
+    "featured": true,
+    "featuredOrder": 2,
+    "cardSpecs": "Twisted · Coils",
     "description": "Twisting is simply the process of combining together multiple fibres, threads or yarns in a wrapping around (twisting) motion.",
     "image": "Twisted_Fibre_New.jpg",
     "detailSections": [
@@ -76,26 +67,11 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "Color",
-            "value": "Twisted Fibre"
-          },
-          {
-            "label": "Moisture",
-            "value": "<18% Meter Reading"
-          },
-          {
-            "label": "Per Meter",
-            "value": "60-70"
-          },
-          {
-            "label": "Weight",
-            "value": "22-26kgs Net Per"
-          },
-          {
-            "label": "Packing",
-            "value": "In Coils"
-          }
+          { "label": "Color", "value": "Twisted Fibre" },
+          { "label": "Moisture", "value": "<18% Meter Reading" },
+          { "label": "Per Meter", "value": "60-70" },
+          { "label": "Weight", "value": "22-26kgs Net Per" },
+          { "label": "Packing", "value": "In Coils" }
         ],
         "uses": [
           "Rope and fishing nets.",
@@ -110,6 +86,9 @@
   {
     "id": "Coco Chips",
     "title": "Coco Chips",
+    "featured": true,
+    "featuredOrder": 3,
+    "cardSpecs": "8–12 mm · Low EC",
     "description": "Coconut chips is rich in dietary fiber and minerals. It contains iron, magnesium, copper, manganese and pantothenic acid.",
     "image": "Coco_Chips_New.jpg",
     "detailSections": [
@@ -123,26 +102,11 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "EC",
-            "value": "Low EC < 0.8 mS/cm"
-          },
-          {
-            "label": "Moisture",
-            "value": "10 to 15 %"
-          },
-          {
-            "label": "Chips Size",
-            "value": "8 – 12 mm (Medium)"
-          },
-          {
-            "label": "CR",
-            "value": "5:1"
-          },
-          {
-            "label": "Fiber Content",
-            "value": "< 4 %"
-          }
+          { "label": "EC", "value": "Low EC < 0.8 mS/cm" },
+          { "label": "Moisture", "value": "10 to 15 %" },
+          { "label": "Chips Size", "value": "8 – 12 mm (Medium)" },
+          { "label": "CR", "value": "5:1" },
+          { "label": "Fiber Content", "value": "< 4 %" }
         ],
         "uses": [
           "Growing medium for orchids and exotic plants.",
@@ -157,6 +121,9 @@
   {
     "id": "Coir Peat",
     "title": "Coir Peat",
+    "featured": true,
+    "featuredOrder": 4,
+    "cardSpecs": "5 kg · 650 kg · Bulk Bag",
     "description": "Coco peat increases the porosity of the potting mix. This helps to keep the soil loose and airy helping in better root growth.",
     "image": "Coir_Peat_New.jpg",
     "detailSections": [
@@ -184,26 +151,11 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "Moisture",
-            "value": "10 to 15%"
-          },
-          {
-            "label": "Compression ratio",
-            "value": "5 : 1"
-          },
-          {
-            "label": "EC",
-            "value": "0.5ms/cm"
-          },
-          {
-            "label": "pH",
-            "value": "5.2 to 6.8"
-          },
-          {
-            "label": "Expansion",
-            "value": "70 to 80 liters"
-          }
+          { "label": "Moisture", "value": "10 to 15%" },
+          { "label": "Compression ratio", "value": "5 : 1" },
+          { "label": "EC", "value": "0.5ms/cm" },
+          { "label": "pH", "value": "5.2 to 6.8" },
+          { "label": "Expansion", "value": "70 to 80 liters" }
         ],
         "uses": [
           "Soil conditioner to retain moisture and improve aeration.",
@@ -218,6 +170,9 @@
   {
     "id": "Coco Grow Bags",
     "title": "Coco Grow Bags",
+    "featured": true,
+    "featuredOrder": 5,
+    "cardSpecs": "Open Top · Naked",
     "description": "Grow bags are very useful growing in garden. It provides a perfect growing environment for a wide range of vegetables, fruits, flowers.",
     "image": "Coco_Grow_Bags_New.jpg",
     "detailSections": [
@@ -238,26 +193,11 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "Moisture",
-            "value": "below 20%"
-          },
-          {
-            "label": "EC",
-            "value": "Below 1 ms/cm"
-          },
-          {
-            "label": "CR",
-            "value": "5:1"
-          },
-          {
-            "label": "pH",
-            "value": "5.5 – 6.5"
-          },
-          {
-            "label": "Weight",
-            "value": "3 kgs"
-          }
+          { "label": "Moisture", "value": "below 20%" },
+          { "label": "EC", "value": "Below 1 ms/cm" },
+          { "label": "CR", "value": "5:1" },
+          { "label": "pH", "value": "5.5 – 6.5" },
+          { "label": "Weight", "value": "3 kgs" }
         ],
         "uses": [
           "Hydroponic cultivation of vegetables.",
@@ -272,6 +212,9 @@
   {
     "id": "Nursery",
     "title": "Nursery",
+    "featured": true,
+    "featuredOrder": 6,
+    "cardSpecs": "Coins · Pullets · Cubes",
     "description": "Nurseries may supply plants for gardens, for agriculture, for forestry and for conservation biology.",
     "image": "Nursery_New.jpg",
     "detailSections": [
@@ -299,26 +242,11 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "Raw Material",
-            "value": "Coir Fiber Pith 100%"
-          },
-          {
-            "label": "Drying",
-            "value": "Sun Drying and Sterilization"
-          },
-          {
-            "label": "Moisture Content",
-            "value": "Between 15 to 20%"
-          },
-          {
-            "label": "pH",
-            "value": "5.5 to 6.8"
-          },
-          {
-            "label": "Compression Ratio",
-            "value": "8:1"
-          }
+          { "label": "Raw Material", "value": "Coir Fiber Pith 100%" },
+          { "label": "Drying", "value": "Sun Drying and Sterilization" },
+          { "label": "Moisture Content", "value": "Between 15 to 20%" },
+          { "label": "pH", "value": "5.5 to 6.8" },
+          { "label": "Compression Ratio", "value": "8:1" }
         ],
         "uses": [
           "Seed germination for vegetables, flowers, and herbs.",
@@ -333,6 +261,9 @@
   {
     "id": "Rubberised Coir",
     "title": "Rubberised Coir",
+    "featured": true,
+    "featuredOrder": 7,
+    "cardSpecs": "Sheets · Pads",
     "description": "Pioneers in production and supply of Rubberised Coir use clean natural coir fibres and natural rubber latex.",
     "image": "Rubberised_Coir_New.jpg",
     "detailSections": [
@@ -346,26 +277,11 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "Color",
-            "value": "Coir White"
-          },
-          {
-            "label": "Moisture",
-            "value": "up to 15%"
-          },
-          {
-            "label": "Impurity",
-            "value": "< 3%"
-          },
-          {
-            "label": "Length",
-            "value": "5cm to 25cm"
-          },
-          {
-            "label": "Packing",
-            "value": "Plastic straps"
-          }
+          { "label": "Color", "value": "Coir White" },
+          { "label": "Moisture", "value": "up to 15%" },
+          { "label": "Impurity", "value": "< 3%" },
+          { "label": "Length", "value": "5cm to 25cm" },
+          { "label": "Packing", "value": "Plastic straps" }
         ],
         "uses": [
           "Mattresses – orthopedic, spring-free, eco-friendly bedding.",
@@ -380,6 +296,9 @@
   {
     "id": "Garden Articles",
     "title": "Garden Articles",
+    "featured": true,
+    "featuredOrder": 8,
+    "cardSpecs": "Hooks · Baskets",
     "description": "From poles to plant pots to hanging baskets, coir makes just about every accessory that is essential for modern day gardening.",
     "image": "Garden_Articles_New.png",
     "detailSections": [
@@ -400,18 +319,9 @@
       {
         "type": "specsUses",
         "specs": [
-          {
-            "label": "Color",
-            "value": "Brown and Golden Yellow"
-          },
-          {
-            "label": "Moisture",
-            "value": "15% - 20%"
-          },
-          {
-            "label": "Impurity",
-            "value": "3% max"
-          }
+          { "label": "Color", "value": "Brown and Golden Yellow" },
+          { "label": "Moisture", "value": "15% - 20%" },
+          { "label": "Impurity", "value": "3% max" }
         ],
         "uses": [
           "making carpets",
