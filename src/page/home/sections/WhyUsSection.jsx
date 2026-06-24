@@ -1,59 +1,50 @@
-import hero2 from "../../../assets/Home_2.jpg";
-import hero3 from "../../../assets/Home_3.jpg";
+import { motion } from "framer-motion";
+import SectionHeading from "../../../components/ui/SectionHeading";
+import DynamicIcon from "../../../components/ui/DynamicIcon";
+import { MotionSection, staggerContainer, staggerItem } from "../../../components/ui/Motion";
+import { buyerBenefits } from "../../../data/homeData";
 
 const WhyUsSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-6 px-4 sm:px-12 mx-auto w-full">
-      {/* Left text block - Our Vision */}
-      <div className="md:col-span-4 bg-slate-700 text-white p-8 text-4xl md:text-5xl font-bold rounded-2xl flex items-center justify-center text-center">
-        <span className="opacity-60">Our Vision</span>
-      </div>
-
-      {/* First image block */}
-      <div className="md:col-span-8 relative rounded-2xl overflow-hidden group">
-        <img
-          src={hero2}
-          alt="Why Use Coir"
-          className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-105"
+    <MotionSection
+      id="why-us"
+      className="section-padding bg-gradient-to-br from-primary-50 to-beige-100 dark:from-gray-900 dark:to-gray-950"
+    >
+      <div className="section-container">
+        <SectionHeading
+          eyebrow="Why Global Buyers Choose Us"
+          title="Your Reliable Coir Export Partner"
+          subtitle="We combine manufacturing excellence, competitive pricing, and dedicated B2B support to help international buyers succeed in their markets."
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex items-end">
-          <p className="text-white text-sm sm:text-base font-medium">
-            To emerge as the world’s most reliable, future-ready, and
-            environmentally conscious coir manufacturer — delivering innovative,
-            high-performance solutions that support sustainable agriculture,
-            advanced horticulture, and eco-focused industries worldwide. At
-            Lumicos, we envision a future where automation, integrity, and
-            global excellence drive every fiber we produce and every partnership
-            we build.
-          </p>
-        </div>
-      </div>
 
-      {/* Second image block */}
-      <div className="md:col-span-8 relative rounded-2xl overflow-hidden group">
-        <img
-          src={hero3}
-          alt="Empowering Women"
-          className="w-full h-96 object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent p-6 flex items-end">
-          <p className="text-white text-sm sm:text-base font-medium">
-            To deliver consistent, export-quality coir products that not only
-            meet but surpass global expectations — through precision
-            manufacturing, ethical practices, and a relentless focus on
-            innovation. We aim to empower our customers, support our people, and
-            protect the planet by building a business rooted in trust,
-            transparency, long-term value, and a deep respect for natural
-            resources.
-          </p>
-        </div>
+        <motion.div
+          className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          {buyerBenefits.map((benefit) => (
+            <motion.div
+              key={benefit.title}
+              variants={staggerItem}
+              whileHover={{ y: -4 }}
+              className="group p-6 rounded-2xl bg-white dark:bg-gray-900 shadow-premium hover:shadow-premium-lg border border-primary/5 transition-all duration-300"
+            >
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-primary-600 flex items-center justify-center mb-5 group-hover:from-accent group-hover:to-accent-500 transition-all duration-300">
+                <DynamicIcon name={benefit.icon} size={22} className="text-white" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
+                {benefit.title}
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                {benefit.description}
+              </p>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
-
-      {/* Right text block - Our Mission */}
-      <div className="md:col-span-4 bg-slate-700 text-white p-8 text-3xl md:text-4xl font-bold rounded-2xl flex items-center justify-center text-center">
-        <span className="opacity-60">Our Mission</span>
-      </div>
-    </div>
+    </MotionSection>
   );
 };
 

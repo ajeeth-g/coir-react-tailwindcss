@@ -1,67 +1,135 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import {
   Facebook,
   Instagram,
-  Twitter,
-  Linkedin
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  ArrowRight,
 } from "lucide-react";
+import BrandLogo from "./BrandLogo";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-700 text-white pt-12 pb-6">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
-        {/* Logo & Tagline */}
-        <div>
-          <h2 className="text-2xl font-bold mb-4 text-orange-500">Lumicos LLP</h2>
-          <p className="text-gray-300">
-            Accelerating your success with smart solutions tailored to grow.
-          </p>
-        </div>
+    <footer className="bg-primary-900 text-white">
+      <div className="section-container py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+          <div className="lg:col-span-1">
+            <Link to="/" className="inline-block mb-5">
+              <BrandLogo variant="light" size="lg" />
+            </Link>
+            <p className="text-white/70 text-sm leading-relaxed mb-6">
+              India's trusted coir export manufacturer. Premium coco peat, fiber,
+              grow bags, and customized solutions for global B2B buyers since 2008.
+            </p>
+            <div className="flex gap-3">
+              {[
+                { Icon: Facebook, href: "#" },
+                { Icon: Instagram, href: "#" },
+                { Icon: Linkedin, href: "#" },
+              ].map(({ Icon, href }, i) => (
+                <a
+                  key={i}
+                  href={href}
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors"
+                  aria-label="Social link"
+                >
+                  <Icon size={18} />
+                </a>
+              ))}
+            </div>
+          </div>
 
-        {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li><Link to="/" className="hover:text-orange-400">Home</Link></li>
-            <li><Link to="/about-us" className="hover:text-orange-400">About Us</Link></li>
-            <li><Link to="/products" className="hover:text-orange-400">Products</Link></li>
-            <li><Link to="/contact-us" className="hover:text-orange-400">Contact</Link></li>
-          </ul>
-        </div>
+          <div>
+            <h3 className="font-display font-bold text-lg mb-5 text-accent">
+              Quick Links
+            </h3>
+            <ul className="space-y-3 text-sm text-white/70">
+              {[
+                { to: "/", label: "Home" },
+                { to: "/about-us", label: "About Us" },
+                { to: "/products", label: "Products" },
+                { to: "/export-countries", label: "Export Countries" },
+                { to: "/certifications", label: "Certifications" },
+                { to: "/our-infra", label: "Infrastructure" },
+                { to: "/our-portfolio", label: "Portfolio" },
+                { to: "/blog", label: "Blog" },
+                { to: "/contact-us", label: "Contact" },
+              ].map((link) => (
+                <li key={link.to}>
+                  <Link
+                    to={link.to}
+                    className="hover:text-accent transition-colors inline-flex items-center gap-1 group"
+                  >
+                    <ArrowRight
+                      size={14}
+                      className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all"
+                    />
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Contact Info */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Contact</h3>
-          <ul className="text-gray-300 space-y-2">
-            <li>Email: gaurav@lumicos.com</li>
-            <li>Phone: +91 99654 05999</li>
-            <li>Location: 30 Sri MKK Enclave, Marapettai Street, Pollachi 642001, Tamil Nadu, India</li>
-          </ul>
-        </div>
+          <div>
+            <h3 className="font-display font-bold text-lg mb-5 text-accent">
+              Products
+            </h3>
+            <ul className="space-y-3 text-sm text-white/70">
+              {[
+                { to: "/products/coir-pith-blocks", label: "Coir Pith Blocks" },
+                { to: "/products/coco-peat-grow-bags", label: "Coco Grow Bags" },
+                { to: "/products/coir-fiber", label: "Coir Fiber" },
+                { to: "/products/coir-rope", label: "Coir Rope" },
+                { to: "/products/coco-chips", label: "Coco Chips" },
+                { to: "/products/nursery-coir-products", label: "Nursery Products" },
+                { to: "/contact-us", label: "Custom Solutions" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link to={link.to} className="hover:text-accent transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Social Media */}
-        <div>
-          <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
-          <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-orange-500">
-              <Facebook size={20} />
-            </a>
-            <a href="#" className="text-white hover:text-orange-500">
-              <Twitter size={20} />
-            </a>
-            <a href="#" className="text-white hover:text-orange-500">
-              <Instagram size={20} />
-            </a>
-            <a href="#" className="text-white hover:text-orange-500">
-              <Linkedin size={20} />
-            </a>
+          <div>
+            <h3 className="font-display font-bold text-lg mb-5 text-accent">
+              Contact
+            </h3>
+            <ul className="space-y-4 text-sm text-white/70">
+              <li className="flex items-start gap-3">
+                <Phone size={16} className="text-accent shrink-0 mt-0.5" />
+                <a href="tel:+919965405999" className="hover:text-white">
+                  +91 99654 05999
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <Mail size={16} className="text-accent shrink-0 mt-0.5" />
+                <a href="mailto:gaurav@lumicos.com" className="hover:text-white">
+                  gaurav@lumicos.com
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={16} className="text-accent shrink-0 mt-0.5" />
+                <span>
+                  30 Sri MKK Enclave, Marapettai Street, Pollachi 642001,
+                  Tamil Nadu, India
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div className="mt-10 text-center text-gray-400 text-sm border-t border-slate-600 pt-6 px-6">
-        © {new Date().getFullYear()} Lumicos LLP. All rights reserved.
+      <div className="border-t border-white/10">
+        <div className="section-container py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-white/50">
+          <p>© {new Date().getFullYear()} Lumicos LLP. All rights reserved.</p>
+          <p>Export-Quality Coir Products · Pollachi, India</p>
+        </div>
       </div>
     </footer>
   );
